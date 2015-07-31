@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.5.2",
+    "gulp-watch": "^4.1.1",
+    "laravel-elixir": "^0.18.7"
+  }
+}
