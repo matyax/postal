@@ -4,7 +4,8 @@ var elixir  = require('laravel-elixir'),
 
 elixir(function(mix) {
     mix.less([ 
-        'admin.less'
+        'admin.less',
+        'main.less'
     ]);
 });
 
@@ -52,13 +53,6 @@ gulp.task('publish', function() {
         'bower_components/fullcalendar/dist/fullcalendar.min.css'
       ])
       .pipe(concat('plugins.css'))
-      //.pipe(uglify())
-      .pipe(gulp.dest('public/css/'));
-
-    gulp.src([
-        'bower_components/fullcalendar/dist/fullcalendar.min.css'
-      ])
-      .pipe(concat('plugins_turnos.css'))
       //.pipe(uglify())
       .pipe(gulp.dest('public/css/'));
 

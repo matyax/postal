@@ -1,0 +1,240 @@
+#agency {
+    #agency-process {
+        height: 760px;
+        background-image: url(../img/agency-bgr.png);
+        background-position: center top;
+        @media screen and (max-width: @sm) and (min-width: 550px) {
+             height: 1040px;
+        }
+        
+        @media screen and (max-width: 550px) and (min-width: 450px) {
+                height: 840px;
+        }
+          
+        
+        .process-block-list {
+            position: relative;
+             @media screen and (max-width: @md) and (min-width: @sm) {
+
+                  margin-left: -15%;
+
+            }
+            @media screen and  (min-width: @lg) {
+
+                  margin-left: 8%;
+
+            }
+            
+             @media screen and (max-width: @sm) and (min-width: 650px) {
+                position: absolute;
+                width: 0;
+                left: 50%;
+                margin-left: -35%;
+                
+            }
+            
+            @media screen and (max-width: 650px) and (min-width: 550px) {
+                position: absolute;
+                width: 0;
+                left: 50%;
+                margin-left: -45%;
+            }
+            
+            @media screen and (max-width: 550px) and (min-width: 450px) {
+                position: absolute;
+                width: 0;
+                left: 50%;
+                margin-left: -40%;
+                transform: scale(.8);
+            }
+            @media screen and (max-width: 450px) and (min-width: 400px) {
+                position: absolute;
+                width: 0;
+                left: 4%;
+                transform: scale(.7);
+            }
+          
+            @media screen and (max-width: 400px) {
+                position: absolute;
+                width: 0;
+                left: 2%;
+                transform: scale(.6);
+            }
+          
+            
+            .process-block {
+                width: 300px;
+                background-image: url(../img/agency/process-block.png);
+                height: 260px;
+                background-size: 300px 260px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+                color: @white;
+                box-sizing: border-box;
+                padding: 0 @paddingBase;
+                font-size: @h4;
+                line-height: (@h4*1.10);
+                .image {
+                    width: 100%;
+                    img {
+                        width: 85%;
+                    }
+                    &.plane {
+                        padding-top: 30px;
+                        img{
+                            width: 80%;
+                        }
+                    }
+                }
+                .text {
+                    padding-top: @paddingBase;
+                    &.first-text {
+                        font-size: @h5;
+                        padding-top: 55px;
+                    }
+                    &.third-text {
+                        font-size: @h6;
+                        padding: 30px 10px;
+                        strong {
+                            font-size: @h5;
+                        }
+                        
+                    }
+                    strong {
+                        font-weight: normal;
+                        font-style: italic;
+                        font-size: @h4;
+                        color: @blueDark;
+                    }
+                }
+                
+                &.first {
+                    top: 195px;
+                    left: 100px;
+                    @media screen and (max-width: @sm)  {
+                        top: 195px;
+                        left: 0px;
+                    }
+                }
+                &.second {
+                    top: 64px;
+                    left: 330px;
+                    @media screen and (max-width: @sm)  {
+                        top: 64px;
+                        left: 230px;
+                    }
+                }
+                &.third {
+                    top: 195px;
+                    left: 560px;
+                    @media screen and (max-width: @sm)  {
+                        top: 726px;
+                        left: 0;
+                    }
+                }
+                &.fourth {
+                    top: 460px;
+                    left: 100px;
+                    
+                    @media screen and (max-width: @sm)  {
+                        top: 460px;
+                        left: 0px;
+                    }
+                    
+                }
+                &.fifth {
+                    top: 328px;
+                    left: 330px;
+                    @media screen and (max-width: @sm) {
+                        top: 328px;
+                        left: 230px;
+                    }
+                }
+                &.sixth {
+                    top: 460px;
+                    left: 560px;
+                    @media screen and (max-width: @sm)  {
+                        top: 593px;
+                        left: 230px;
+                    }
+                }
+                
+            }
+        }
+    }
+    #agency-team {
+        padding: (@paddingBase*2) 0;
+        .team-member {
+            margin-bottom: (@paddingBase*2);
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .team-member-avatar {
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                display: inline-block;
+                background-color: @blueLight;
+                border-radius: @borderRadius;
+                background-size: 60px 60px;
+                background-position: center center;
+                &.mariani {
+                    background-image: url(../img/team/mariani.png);
+                }
+                &.castellino {
+                    background-image: url(../img/team/castellino.png);
+                }
+                &.sanchez {
+                    background-image: url(../img/team/sanchez.png);
+                }
+                
+                &.maldonado {
+                    background-image: url(../img/team/maldonado.png);
+                }
+                &.segovia {
+                    background-image: url(../img/team/segovia.png);
+                }
+                &.esteller  {
+                    background-image: url(../img/team/esteller.png);
+                }
+                
+                &.perlino  {
+                    background-image: url(../img/team/perlino.png);
+                }
+                &.gonzalez {
+                    background-image: url(../img/team/gonzalez.png);
+                }
+                &.romero  {
+                    background-image: url(../img/team/romero.png);
+                }
+            }
+            .team-member-data {
+                display: inline-block;
+                vertical-align: top;
+                padding-top: 6px;
+                line-height: 26px;
+                
+                @media screen and (max-width: @sm) {
+                    width: 70%;
+                }
+                
+                .team-member-name {
+                    font-size: @h4;
+                    color: @blueDark;
+                    @media screen and (max-width: @sm) {
+                        font-size: (@h4*0.85);
+                    }
+                }
+                .team-member-title {
+                    font-size: @h5;
+                    @media screen and (max-width: @sm) {
+                        font-size: (@h5*0.85);
+                    }
+                }
+            }
+            
+        }
+    }
+}

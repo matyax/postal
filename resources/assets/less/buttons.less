@@ -1,0 +1,41 @@
+.button {
+    display: inline-block;
+    padding: (@paddingBase/2) @paddingBase;
+    color: @white;
+    background-color: @blue;
+    text-transform: lowercase;
+    &:hover{
+        background-color: @blueDark;
+    }
+    
+}
+input[type="submit"].button {
+    border: 0;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 0 (@paddingBase/2);
+    color: @white;
+    background-color: @blue;
+    height: 50px;
+    line-height: 54px;
+    text-decoration: none;
+    &:hover {
+        background-color: @blueDark;
+    }
+}
+
+.big-button {
+    display: inline-block;
+    padding: 0 (@paddingBase);
+    color: @white;
+    background-color: @blue;
+    height: 50px;
+    line-height: 54px;
+    text-decoration: none;
+    &:hover {
+        background-color: @blueDark;
+    }
+    border-radius: 6px;
+}

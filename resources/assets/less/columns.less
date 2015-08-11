@@ -1,0 +1,87 @@
+.col3 {
+    width: 33.3333333%;
+    display: inline-block;
+    float: left;
+    padding-right: @paddingBase;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: @md) and (min-width: @sm) {
+        
+            width: 50%;
+        
+    }
+     @media screen and (max-width: @sm) {
+        
+        width: 100%;
+        left: 50%;
+        position: relative;
+        margin-left: -40%;
+        
+    }
+    
+}
+
+.col6 {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    padding-right: @paddingBase;
+    box-sizing: border-box;
+    @media screen and (max-width: @sm) {    
+        width: 100%;
+    }
+    
+}
+.col8 {
+    width: 80%;
+    display: inline-block;
+    float: left;
+    padding-right: @paddingBase;
+    box-sizing: border-box;
+    @media screen and (max-width: @md) {
+            width: 100%;    
+    }
+}
+
+.pull-right {
+    float: right;
+    padding-right: 0;
+}
+
+.center {
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+    display: block;
+}
+
+
+.container {
+    width: @containerMd;
+    margin: 0 auto;
+  
+    @media screen and (min-width: @lg) {
+            width: @containerLg;
+    }
+
+    @media screen and (max-width: @lg) and (min-width: @md) {
+        
+            width: @containerMd;
+        
+    }
+
+    @media screen and (max-width: @md) and (min-width: @sm) {
+        
+            width: @containerSm;
+        
+    }
+
+    @media screen and (max-width: @sm)  {
+        
+        width: @containerXs;
+        min-width: 320px !important;
+        
+    }
+
+}
+

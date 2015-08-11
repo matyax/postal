@@ -1,0 +1,185 @@
+#services {
+    #services-cards {
+        
+        color: @white;
+        height: 600px;
+        
+        @media screen and (max-width: @md) and (min-width: @sm) {
+            height: 500px;
+        }
+       
+        font-size: 0;
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        
+         @media screen and (max-width: @sm) {
+            height: auto;
+             display: block;
+        }
+        
+        .service-card {
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid;
+            width: 16.6666666%;
+            min-width: 0;
+            height: 600px;
+            overflow: hidden; 
+            transition: min-width .5s ease-in-out;
+            
+            @media screen and (max-width: @sm) {
+                height: 100px;
+                width: 100%;
+                transition: height .5s ease-in-out;
+            }
+            
+            
+            .content {
+                width: 840px;
+                display: inline-block;
+                 @media screen and (max-width: @sm) {
+                    height: 500px;
+                    width: 100%;
+                }
+                .text {
+                    position: relative;
+                    min-width: 400px;
+                    width: 400px;
+                    text-align: center;
+                    background-color: @grayDark;
+                    box-sizing: border-box;
+                    padding: (@paddingBase*2);
+                    height: 600px;
+                    line-height: 1.2em;
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: @h5;
+                    
+                    
+                    
+                    @media screen and (max-width: @md) and (min-width: @sm) {
+                        min-width: 350px;
+                        width: 350px;  
+                        height: 500px;
+                    }
+                    
+                    
+                    @media screen and (max-width: @sm) {
+                        height: 350px;
+                        width: 100%;
+                        min-width: 100%;
+                        font-size: (@h5*0.8);
+                        padding: 0 (@paddingBase*2);
+                    }
+                    
+                 
+
+                    h3 {
+                        font-size: @h3;
+                        line-height: 1.2em;
+                        text-transform: uppercase;
+                        padding-top: (@paddingBase*2);
+                        padding-bottom: (@paddingBase*2);
+                        margin: 0;
+                    }
+                    p {
+                        margin: 0;
+                        padding: 0 0 @paddingBase;
+                    }
+                    
+                    
+                    .action {
+                        position: absolute;
+                        bottom: (@paddingBase*4);
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                        @media screen and (max-width: @sm) {
+                            position: relative;
+                            bottom: auto;
+                        }
+                    }
+
+                }
+                .image {
+                    width: 440px;
+                    min-width: 440px;
+                    
+                    @media screen and (max-width: @md) and (min-width: @sm) {
+                        min-width: 300px;
+                        width: 300px;  
+                        height: 500px;
+                    }
+                    
+                    @media screen and (max-width: @sm) {
+                        height: 200px;
+                        width: 100%;
+                        min-width: 100%;
+                    }
+                    height: 600px;
+                 
+                    background-color: @blue;
+                    display: inline-block;
+                    vertical-align: top;
+                    background-position: center center;
+                    background-size: cover;
+
+                }
+            }
+            &:hover {
+                min-width: 840px;
+                 @media screen and (max-width: @md) and (min-width: @sm) {
+                    min-width: 650px;  
+                 }
+                 @media screen and (max-width: @sm) {
+                    height: 550px;
+                    width: 100%;
+                    min-width: 100%;
+                }
+             
+            }
+        }
+    }
+    
+    #services-clients {
+        padding: (@paddingBase*4) 0;
+        h2 {
+            text-align: center;
+            font-size: @h2;
+            color: @blue;
+            padding: 0 0 (@paddingBase*4);
+            margin: 0;
+        }
+        
+        #client-list {
+            font-size: 0;
+            .client-item {
+                position: relative;
+                display: inline-block;
+                width: 20%;
+                box-sizing: border-box;
+                margin-bottom: (-@paddingBase);
+                
+                @media screen and (max-width: @sm) {
+                    width: 33.33333%;
+                }    
+                    
+                .image {
+                    position: absolute;
+                    width: 100%;
+                    top: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+                &:before {
+                    content: '';
+                    padding-top: 65%;
+                    display: block;
+                }
+            }
+        }
+    }
+}

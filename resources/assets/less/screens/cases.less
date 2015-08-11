@@ -1,0 +1,225 @@
+#cases {
+    height: 900px;
+    min-height: 600px;
+    max-height: 100%;
+    
+    @media screen and (max-width: @md) and (min-width: @sm) {
+        height: 450px;
+        min-height: 400px;
+        max-height: 100%;  
+    }
+    
+    @media screen and (max-width: @sm) {
+        min-height: 110% !important; 
+    }
+                    
+    
+    background-color: @grayLight;
+    #cases-description {
+        position: absolute;
+        bottom: (@paddingBase*2 + 40);
+        width: 100%;
+        .description-container {
+            background-color: fade(@white, 80%);
+            padding: @paddingBase;
+            text-align: center;
+            font-style: italic;
+            color: @blueDark;
+        }
+    }
+    #cases-nav {
+        position: absolute;
+        bottom: (@paddingBase*2);
+        width: 100%;
+        z-index: 20;
+        ul {
+            width: 100%;
+            background-color: @blue;
+            margin: 0;
+            list-style-type: 0;
+            text-align: center;
+            padding: 0;
+            height: 40px;
+            line-height: 40px;
+            li {
+                
+                display: inline-block;
+                a {
+                    color: @white;
+                    text-decoration: none;
+                    display: inline-block;
+                    height: 30px;
+                    line-height: 30px;
+                    border-right: 1px dotted @white;
+                    padding: 0 (@paddingBase/2);
+                    &:hover {
+                        color: @blueDark;
+                    }
+                }
+                &:last-child {
+                    a {    
+                        border-right: none;
+                    }
+                }
+                
+                &.active {
+                    a {
+                        color: @blueDark;
+                         @media screen and (max-width: @sm) {
+                            color: @white;
+                            border-right: none;
+                         }
+                    }
+                     @media screen and (max-width: @sm) {
+                         display: block !important;
+                         
+                     }
+                }
+                
+                @media screen and (max-width: @sm) {
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+    
+    #cases-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        .cases-item {
+            transition: left 1s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            transform: translate3d(0,0,0);
+            font-size: 0;
+            overflow: hidden;
+                .case-image {
+                    width: 25%;
+                    height: 100%;
+                    display: inline-block;
+                    position: relative;
+                    box-sizing: border-box;
+                    background-position: center center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    
+                    @media screen and (max-width: @sm) {
+                           height: 25%;
+                        width: 100%;
+                    }
+                    
+                    &.half {
+                        height: 50%;
+                        
+                    }
+                    &.third {
+                        height: 33.4%;
+                        width: 33.333333%;
+                    }
+                    &.third-full {
+                        height: 100%;
+                        width: 33.333333%;
+                        @media screen and (max-width: @sm) {
+                            width: 100%;
+                            height: 33.333333%;
+                        }
+                    }
+                    &.full {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    &.before-after-top {
+                        height: 25%;
+                        width: 100%;
+                        @media screen and (max-width: @sm) {
+                              height: 30%;
+                              background-size: 150% auto;
+                              background-position: center center;
+                              background-color: @white;
+                        }
+                    }
+                    &.before-after-image {
+                        height: 75%;
+                        width: 100%;
+                        @media screen and (max-width: @sm) {
+                          height: 70%;
+                        }
+                    }
+                    &.before-after-image-half {
+                        height: 75%;
+                        width: 50%;
+                    }
+
+                    &.thumb-big {
+                        height: 100%;
+                        width: 80%;
+                        @media screen and (max-width: @sm) {
+                            width: 100%;
+                            height: 70%;
+                        }
+                    }
+                    &.thumbs {
+                        height: 100%;
+                        width: 20%;
+                        vertical-align: top;
+                        .third {
+                            height: 33.4%;
+                            width: 100% !important;
+                            @media screen and (max-width: @sm) {
+                                height: 100% !important;
+                                width: 33.33% !important;
+                            }
+                        }
+                        @media screen and (max-width: @sm) {
+                            height: 30%;
+                            width: 100%;
+                        
+                        }
+                    }
+                    
+                   
+                }
+            }
+    }
+    #cases-arrows {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        a {
+            display: inline-block;
+            width: 90px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            margin-top: -75px;
+            background-size: 90px 150px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            text-indent: -9000px;
+            
+            &.arrow-left {
+                left: 40px;
+                background-image: url(../img/cases/arrow-left.png);
+            }
+            &.arrow-right {
+                right: 40px;
+                background-image: url(../img/cases/arrow-right.png);
+            }
+        }
+    }
+    
+}

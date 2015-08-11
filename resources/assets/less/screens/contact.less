@@ -1,0 +1,174 @@
+#contact {
+    background-image: url(../img/contact-bgr.jpg);
+    background-position: left bottom;
+    background-size: 1920px auto;
+    position: relative;
+    max-height: 1270px !important;
+    .wrapper {
+            position: absolute;
+        bottom: 0;
+        height: auto;
+        min-height: auto;
+        width: 100%;
+    }
+    .container {
+        position: relative;
+    }
+    .map-link {
+        position: absolute;
+        left: 216px;
+        bottom: 340px;
+        width: 60px;
+        height: 80px;
+        background-image: url(../img/contact-map.png);
+        background-size: 60px auto;
+        z-index: 100;
+        display: inline-block;
+        @media screen and (max-width: @sm)  {
+        
+            display: none;
+        
+        }
+    }
+    
+    .contact-block {
+        
+        background-color: fade(#FFF, 80%) ;
+        padding: 60px (@paddingBase*2) (@paddingBase*2);
+        font-size: @textSmall;
+        line-height: 1.3em;
+        color: @grayMedium;
+        position: relative;
+        
+        @media screen and (max-width: @sm)  {
+            margin-bottom: 120px;
+        }
+        
+        .title {
+            position: absolute;
+            top: @paddingBase;
+            left: (@paddingBase*2 - 3);
+            width: 100%;
+            height: 150px;
+            background-image: url(../img/contact-title.png);
+            background-position: top left;
+            background-size: 90% auto;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+        
+        .social-links {
+            position: absolute;
+            left: -60px;
+            top: 60px;
+            a {
+                background-color: @blue;
+                width: 60px;
+                height: 60px;
+                display: block;
+                margin-bottom: 5px;
+                text-indent: -9000px;
+                background-size: 60px 60px;
+                background-repeat: no-repeat;
+                
+                &.facebook {
+                    background-image: url(../img/contact-facebook.png);
+                }
+                &.twitter {
+                    background-image: url(../img/contact-twitter.png);
+                }
+                
+                @media screen and (max-width: @sm)  {
+                    float: left;
+                    margin-left: 5px;
+                }
+                
+            }
+            
+            @media screen and (max-width: @sm)  {
+                right: 0px;
+                bottom: -65px;
+                left: auto;
+                top: auto;
+            }
+        
+        }
+        
+        .form {
+            
+            
+            input[type="text"],input[type="email"], textarea {
+                border:0;
+                background-color: @grayLight;
+                color: @gray;
+                box-sizing: border-box;
+                padding: (@paddingBase/4) (@paddingBase/2);
+            }
+            label {
+                color: @blueDark;
+            }
+            
+            padding: (@paddingBase*2) (@paddingBase*2) 0;
+            font-size: 0;
+            position: relative;
+            z-index: 10;
+            
+            @media screen and (max-width: @sm)  {
+                padding: 0;
+            }
+            
+            .form-half-col {
+                display: inline-block;
+                width: 47.5%;
+                margin-right: 2.5%;
+                margin-bottom: @paddingBase;
+                font-size: @textSmall;
+                input {
+                    width: 100%;
+                }
+                
+                & +  .form-half-col {
+                     margin-left: 2.5%;
+                    margin-right: 0;
+                }
+                
+                @media screen and (max-width: @sm)  {
+        
+                    width: 100%;
+                    margin-right: 0 !important;
+                    margin-left: 0 !important;
+
+                }
+                
+            }
+            
+            .form-full-col {
+                font-size: @textSmall;
+                 margin-bottom: @paddingBase;
+            }
+            
+            textarea {
+                width: 100%;
+                margin-bottom: -5px;
+            }
+            input[type="submit"] {
+                float: right;
+            }
+        }
+    }
+    footer {
+        font-family: 'Arial', sans-serif;
+        font-size: 10px;
+        color: @white;
+        position: absolute;
+        bottom: 20px;
+        width: 38%;
+        text-align: right;
+        
+        @media screen and (max-width: @sm)  {
+            width: 100%;
+            text-align: center;
+        }
+        
+    }
+}
