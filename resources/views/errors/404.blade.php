@@ -2,7 +2,7 @@
     <head>
          <meta charset="utf-8">
         <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
-        
+
         <style>
             body {
                 margin: 0;
@@ -13,7 +13,6 @@
                 display: table;
                 font-weight: 200;
                 font-family: 'Source Sans Pro', sans-serif;
-                  background-image: url(/website/img/company3.jpg);
                   background-position: bottom center;
                   background-size: 100% auto;
                   background-repeat: no-repeat;
@@ -66,13 +65,10 @@
         </style>
     </head>
     <body>
-       <div class="brand">
-            <img src="/website/img/brand.svg" />
-       </div>
         <div class="container">
             <div class="content">
                 <div class="title">Página no encontrada</div>
-                <a href="/">Volver a Territorio Yacopini</a>
+                <a href="/">Volver al sitio web</a>
             </div>
         </div>
     </body>

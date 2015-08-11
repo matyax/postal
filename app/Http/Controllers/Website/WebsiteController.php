@@ -1,7 +1,6 @@
 <?php namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use Yacopini\JobRequest\DataService as JobRequestDataService;
 use Input;
 
 class WebsiteController extends Controller {

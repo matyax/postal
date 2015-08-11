@@ -2,12 +2,6 @@
 
 @section('content')
 
-<script>
-    var Parameters = {
-        brand_id: {{ Session::get('brand_id') }}
-    };
-</script>
-
 <nav id="main-nav" ng-controller="NavigationController">
     <button type="button" id="nav-toogle-btn" class="btn btn-default navbar-btn" >
         <span class="sr-only">Abrir Navegación</span>
@@ -24,7 +18,7 @@
                     <span class="fa fa-cog fa-spin fa-2x fa-fw" style="display: none" id="loadingDisplay"></span>
                 </div>
                 <div class="text">
-                    Yacopini {{ $brandName }}
+                    Postal Urbana
                 </div>
             </a>
         </div>

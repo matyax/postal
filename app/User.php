@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
-use Yacopini\Model\Base as BaseModel;
+use CMS\Model\Base as BaseModel;
 use App\Permission;
 
 class User extends BaseModel implements AuthenticatableContract, CanResetPasswordContract {

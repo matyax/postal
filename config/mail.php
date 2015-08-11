@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'entregasgm@yacopini.com.ar', 'name' => 'Territorio Yacopini'],
+	'from' => ['address' => 'noreply@postalurbana.com.ar', 'name' => 'Postal Urbana'],
 
 	/*
 	|--------------------------------------------------------------------------

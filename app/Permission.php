@@ -1,6 +1,6 @@
 <?php namespace App;
 
-use Yacopini\Model\Base as BaseModel;
+use CMS\Model\Base as BaseModel;
 use App\Brand;
 
 class Permission extends BaseModel
