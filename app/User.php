@@ -24,7 +24,7 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
      *
      * @var array
      */
-    protected $fillable = ['name', 'lastname', 'email', 'password', 'permissions', 'brands'];
+    protected $fillable = ['name', 'lastname', 'email', 'password', 'permissions'];
 
     /**
      * The attributes excluded from the model's JSON form.
@@ -39,11 +39,6 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
     public function permissions()
     {
         return $this->hasMany('App\Permission');
-    }
-
-    public function brands()
-    {
-        return $this->belongsToMany('App\Brand');
     }
 
     /**
@@ -67,12 +62,6 @@ class User extends BaseModel implements AuthenticatableContract, CanResetPasswor
             foreach (Permission::$actions as $action => $name) {
                 $data['permissions'][$permission->resource][$action] = $permission->$action;
             }
-        }
-
-        $data['brands'] = [];
-
-        foreach ($this->brands as $brand) {
-            $data['brands'][$brand->id] = true;
         }
 
         return $data;

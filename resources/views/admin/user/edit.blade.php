@@ -57,26 +57,6 @@
                             </fieldset>
 
                             <fieldset>
-                                <legend>Marcas</legend>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Marcas</label>
-                                            @foreach (\CMS\Database\Query::find('\App\Brand') as $brand)
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="t-{{ $brand->id }}" ng-model="{{ $resource }}.brands[{{ $brand->id }}]">
-                                                    <label for="t-{{ $brand->id }}">
-                                                        {{ $brand->name }}
-                                                    </label>
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-                            <fieldset>
                                 <legend>Permisos</legend>
                                 <div class="row">
                                     <div class="col-md-2">
@@ -108,8 +88,6 @@
                                     @endforeach
                                 </div>
                                 @endforeach
-
-                                <input type="hidden" name="brand_id" ng-model="{{ $resource }}.brand_id">
 
                                 <input type="hidden" name="id" ng-model="{{ $resource }}.id" ng-if="{{ $resource}}.id">
                             </fieldset>

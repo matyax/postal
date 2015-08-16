@@ -28,16 +28,4 @@ class AdminController extends Controller {
 
         return redirect()->route('admin_logout');
     }
-
-    public function parameters()
-    {
-        $parameters = [];
-
-        foreach (Parameter::where('brand_id', \Session::get('brand_id'))->get() as $parameter) {
-            $parameters[$parameter->parameter] = $parameter->value;
-        }
-
-        return response()->json($parameters)
-                 ->setCallback('setParameters');
-    }
 }

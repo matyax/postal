@@ -25,7 +25,6 @@
         <?php foreach (Javascript::loadApplicationFiles('admin') as $file): ?>
             <script type="text/javascript" src="<?php echo $file; ?>"></script>
         <?php endforeach; ?>
-        <script src="{{ asset('js/admin/parameters.js') }}"></script>
         <script src="{{ asset('js/vendor/ckeditor/ckeditor.js') }}"></script>
 
     </body>

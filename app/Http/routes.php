@@ -28,15 +28,23 @@ Route::group(['namespace' => 'Website'], function () {
 
 /*
 |--------------------------------------------------------------------------
+| API
+|--------------------------------------------------------------------------
+|
+*/
+Route::group(['namespace' => 'API', 'prefix' => '/api'], function () {
+    Route::post('/login', 'AuthController@login');
+});
+
+/*
+|--------------------------------------------------------------------------
 | Admin
 |--------------------------------------------------------------------------
 |
 */
 Route::get('/auth/login', 'Admin\AdminController@login');
 
-Route::get('/js/admin/parameters.js', 'Admin\AdminController@parameters');
-
-Route::group(['middleware' => ['auth', 'brand'], 'namespace' => 'Admin' ], function () {
+Route::group(['middleware' => ['auth'], 'namespace' => 'Admin' ], function () {
     Route::get('/login', [
         'as'    => 'admin_login',
         'uses'  => 'AdminController@login'
@@ -55,7 +63,7 @@ Route::group(['middleware' => ['auth', 'brand'], 'namespace' => 'Admin' ], funct
      * Resources
      */
     $resources = [
-        'work',
+        'user',
         'permission'
     ];
 

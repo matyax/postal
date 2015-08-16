@@ -33,7 +33,8 @@ class Permission extends BaseModel
     ];
 
     public static $resources = [
-        "work"       => 'Trabajo',
+        'user' => 'Usuarios',
+        'work' => 'Trabajo'
     ];
 
     public static $actions = [
