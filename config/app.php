@@ -145,6 +145,7 @@ return [
         'App\Providers\EventServiceProvider',
         'App\Providers\RouteServiceProvider',
         'App\Providers\CMSServiceProvider',
+        'App\Providers\PostalServiceProvider',
         'Maatwebsite\Excel\ExcelServiceProvider',
         'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider'
     ],

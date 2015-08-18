@@ -1,4 +1,4 @@
-adminApp.controller('EditController', function ($scope, $http, $stateParams, $state, $upload) {
+adminApp.controller('EditController', function ($scope, $http, $stateParams, $state, Upload) {
     var id       = $stateParams.id,
         resource = $state.current.data.resource,
         $button  = $('.btn.btn-success');
@@ -30,7 +30,7 @@ adminApp.controller('EditController', function ($scope, $http, $stateParams, $st
         for (var i = 0; i < $files.length; i++) {
             var file = $files[i];
 
-            $scope.upload = $upload.upload({
+            $scope.upload = Upload.upload({
                 url: '/' + resource + '/images',
                 method: 'POST',
                 withCredentials: true,

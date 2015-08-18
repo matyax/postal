@@ -1,13 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    RewriteCond %{REQUEST_URI} !^/chat
-    RewriteCond %{REQUEST_URI} !^/Admin
-    RewriteCond %{REQUEST_FILENAME} !/vwyacopini\.com\.ar
-    RewriteCond %{REQUEST_FILENAME} !/yacopinigm\.com\.ar
-    RewriteCond %{REQUEST_URI} !^chevrolet
-    RewriteCond %{REQUEST_URI} !^/yplus
-    RewriteCond %{REQUEST_URI} !^/procreauto
     RewriteCond %{REQUEST_URI} !^public
     RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>

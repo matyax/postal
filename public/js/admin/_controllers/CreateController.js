@@ -1,4 +1,4 @@
-adminApp.controller('CreateController', function ($scope, $http, $stateParams, $state, $upload) {
+adminApp.controller('CreateController', function ($scope, $http, $stateParams, $state, Upload) {
     var resource = $state.current.data.resource,
         $button  = $('.btn.btn-success');
 
@@ -14,7 +14,7 @@ adminApp.controller('CreateController', function ($scope, $http, $stateParams, $
         for (var i = 0; i < $files.length; i++) {
             var file = $files[i];
 
-            $scope.upload = $upload.upload({
+            $scope.upload = Upload.upload({
                 url: '/' + resource + '/images',
                 method: 'POST',
                 withCredentials: true,

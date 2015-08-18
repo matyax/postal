@@ -1,8 +1,6 @@
 <?php namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\User;
-use App\Parameter;
 use Auth;
 
 class AdminController extends Controller {

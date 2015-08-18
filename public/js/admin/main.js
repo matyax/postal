@@ -1,4 +1,4 @@
-var adminApp = angular.module('adminApp', ['ngResource', 'ui.router', 'angularFileUpload', 'ui.bootstrap']);
+var adminApp = angular.module('adminApp', ['ngResource', 'ui.router', 'ngFileUpload', 'ui.bootstrap']);
 
 adminApp.config(function($stateProvider, $urlRouterProvider, $interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
@@ -16,8 +16,9 @@ adminApp.config(function($stateProvider, $urlRouterProvider, $interpolateProvide
         });
 
     var resources = {
-        "user"  : true,
-        "work"  : true
+        "user"         : true,
+        "workCategory" : true,
+        "work"         : true
     };
 
     for (var resource in resources) {

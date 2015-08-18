@@ -34,8 +34,10 @@ gulp.task('publish', function() {
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
         'bower_components/angular/angular.min.js',
         'bower_components/angular-resource/angular-resource.min.js',
-        'bower_components/ng-file-upload/angular-file-upload-all.min.js',
+        'bower_components/ng-file-upload/ng-file-upload-shim.min.js',
+        'bower_components/ng-file-upload/ng-file-upload.min.js',
         'bower_components/ui-router/release/angular-ui-router.min.js',
+        'bower_components/angular-cookies/angular-cookies.min.js',
         'bower_components/momentjs/min/moment-with-locales.min.js',
         'bower_components/fullcalendar/dist/fullcalendar.min.js',
         'bower_components/fullcalendar/dist/lang/es.js',
@@ -48,13 +50,6 @@ gulp.task('publish', function() {
       .pipe(concat('plugins.js'))
       //.pipe(uglify())
       .pipe(gulp.dest('public/js/'));
-
-    gulp.src([
-        'bower_components/fullcalendar/dist/fullcalendar.min.css'
-      ])
-      .pipe(concat('plugins.css'))
-      //.pipe(uglify())
-      .pipe(gulp.dest('public/css/'));
 
     gulp.src('bower_components/bootstrap/dist/fonts/*')
       .pipe(gulp.dest('public/fonts/'));

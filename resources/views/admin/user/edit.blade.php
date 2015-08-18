@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <header class="section-header">
-                <h1>Especialización</h1>
+                <h1>Usuarios</h1>
                 <div class="section-action">
                     <a ui-sref="{{ $resource }}_list" class="btn btn-default">Cancelar</a>
                     <a ng-click="save()" class="btn btn-success">Guardar</a>
