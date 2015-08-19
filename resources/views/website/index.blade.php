@@ -596,24 +596,11 @@
                <div class="container">
                    <nav class="col8 center">
                        <ul>
-                           <li>
-                               <a href>asesoría comercial</a>
-                           </li>
-                           <li  class="active">
-                               <a href>branding</a>
-                           </li>
-                           <li>
-                               <a href>multimedia</a>
-                           </li>
-                           <li>
-                               <a href>medios y prensa</a>
-                           </li>
-                           <li>
-                               <a href>social media</a>
-                           </li>
-                           <li>
-                               <a href>eventos</a>
-                           </li>
+                          @foreach ($categories as $category)
+                            <li>
+                                <a href>{{ $category->name }}</a>
+                            </li>
+                          @endforeach
 
                        </ul>
                    </nav>

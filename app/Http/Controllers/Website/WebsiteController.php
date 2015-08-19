@@ -1,13 +1,15 @@
 <?php namespace App\Http\Controllers\Website;
 
 use App\Http\Controllers\Controller;
-use Input;
+use App\Work;
+use App\WorkCategory as Category;
 
-class WebsiteController extends Controller {
-
+class WebsiteController extends Controller
+{
     public function index()
     {
-        return view('website.index');
+        return view('website.index')
+                ->with('categories', Category::orderBy('name', 'ASC')->get());
     }
 
     public function migrate()
