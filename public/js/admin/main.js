@@ -17,8 +17,8 @@ adminApp.config(function($stateProvider, $urlRouterProvider, $interpolateProvide
 
     var resources = {
         "user"         : true,
-        "workCategory" : true,
-        "work"         : true
+        "work"         : true,
+        "workCategory" : true
     };
 
     for (var resource in resources) {

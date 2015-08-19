@@ -49,6 +49,19 @@
                 </a>
             </li>
         @endif
+
+        @if ($userPermissions['work']['index'])
+            <li class="nav-item " data-toggle="tooltip" data-placement="right" title="Categorías de trabajo">
+                <a ui-sref="work_list" ui-sref-opts="{reload:true}" >
+                    <div class="icon">
+                        <span class="fa fa-cloud" aria-hidden="true"></span>
+                    </div>
+                    <div class="text">
+                        Trabajos
+                    </div>
+                </a>
+            </li>
+        @endif
     </ul>
     <ul class="sidebar-bottom">
         <li class="nav-item"  data-toggle="tooltip" data-placement="right" title="Perfil de usuario" style="display:none;" >

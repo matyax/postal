@@ -64,8 +64,8 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin' ], function () {
      */
     $resources = [
         'user',
-        'workCategory',
-        'permission'
+        'work',
+        'workCategory'
     ];
 
     foreach ($resources as $resource){

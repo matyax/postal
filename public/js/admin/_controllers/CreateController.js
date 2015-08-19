@@ -54,10 +54,6 @@ adminApp.controller('CreateController', function ($scope, $http, $stateParams, $
         data[resource] = $scope[resource];
         data['images'] = $scope.images;
 
-        if ($('[name="brand_id"]').length) {
-            data[resource].brand_id = Parameters.brand_id;
-        }
-
         $http.post('/' + resource, data)
             .success(function () {
                 $state.transitionTo(resource + '_list', {}, { reload: true });
