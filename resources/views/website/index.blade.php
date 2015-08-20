@@ -1,7 +1,7 @@
 @extends('website.layout')
 
 @section('content')
-        <header id="navigation">
+        <header id="navigation" ng-controller="NavigationController">
             <div class="container">
                 <div id="brand">
                    <a href="/">Postal Urbana Marketing Agency</a>
@@ -9,7 +9,7 @@
                 <nav >
                     <ul id="main-nav">
                         <li class="nav-item">
-                            <a href="#agency" class="nav-link">
+                            <a href="#agency" class="nav-link" ng-click="navigateTo($event)">
                                 <span class="nav-icon agency">
 
                                 </span>
@@ -17,7 +17,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#services" class="nav-link">
+                            <a href="#services" class="nav-link" ng-click="navigateTo($event)">
                                 <span class="nav-icon services">
 
                                 </span>
@@ -25,7 +25,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#cases" class="nav-link">
+                            <a href="#cases" class="nav-link" ng-click="navigateTo($event)">
                                 <span class="nav-icon cases">
 
                                 </span>
@@ -33,7 +33,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">
+                            <a href="#contact" class="nav-link" ng-click="navigateTo($event)">
                                 <span class="nav-icon contact">
 
                                 </span>
