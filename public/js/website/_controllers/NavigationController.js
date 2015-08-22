@@ -4,9 +4,15 @@ angular.module('postalApp').controller('NavigationController', function ($scope)
     $scope.navigateTo = function ($event) {
         $event.preventDefault();
 
-        var $target = $($(event.currentTarget).attr('href'));
+        var targetId  = $(event.currentTarget).attr('href'),
+            $target   = $(targetId),
+            scrollTop = $target.position().top;
 
-        scrollTo($target.position().top);
+        if (targetId == '#services') {
+            scrollTop -= $('header').outerHeight();
+        }
+
+        scrollTo(scrollTop);
     }
 
     function scrollTo(top) {
