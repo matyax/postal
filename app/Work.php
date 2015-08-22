@@ -7,6 +7,15 @@ class Work extends BaseModel
     protected $hasImages = true;
 
     /**
+     * Array of relationships to eager load with list queries.
+     *
+     * @var array
+     */
+    public static $eagerLoadingRelationships = [
+        'category'
+    ];
+
+    /**
      * The database table used by the model.
      *
      * @var string
@@ -22,7 +31,17 @@ class Work extends BaseModel
         'title',
         'description',
         'work_category_id',
-        'position'
+        'position',
+        'display_home'
+    ];
+
+    /**
+     * The attributes that should be casted to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'display_home' => 'boolean'
     ];
 
     /*
@@ -36,4 +55,14 @@ class Work extends BaseModel
     /*
      * Methods
      */
+    public function toArray()
+    {
+        $data = parent::toArray();
+
+        if ($this->category) {
+            $data['category'] = $this->category->title;
+        }
+
+        return $data;
+    }
 }

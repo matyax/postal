@@ -7,8 +7,9 @@ class Base extends EloquentModel
 {
     protected $table;
     protected $fillable;
-    protected $fillableRelations    = [];
-    protected $hasImages            = false;
+    protected $fillableRelations             = [];
+    public static $eagerLoadingRelationships = [];
+    protected $hasImages                     = false;
 
     public $images = [];
 

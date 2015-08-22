@@ -50,7 +50,11 @@ class Query
     {
         $model = static::_parseModel($model);
 
-        $query = $model::where('id', '>', 0);
+        if ($model::$eagerLoadingRelationships) {
+            $query = $model::with($model::$eagerLoadingRelationships);
+        } else {
+            $query = $model::where('id', '>', 0);
+        }
 
         if (! $conditions) {
             return $query;

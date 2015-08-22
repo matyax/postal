@@ -15,7 +15,8 @@
             <table class="table table-striped table-bordered" ng-controller="ListController">
                 <thead>
                     <tr>
-                      <th>Posición</th>
+                      <th width="100">Posición</th>
+                      <th>Categoría</th>
                       <th>Título</th>
                       <th class="small-td text-center">Acciones</th>
                     </tr>
@@ -24,6 +25,9 @@
                     <tr ng-repeat="model in models">
                         <td>
                             [[ model.position ]]
+                        </td>
+                        <td>
+                            [[ model.category ]]
                         </td>
                         <td>
                             [[ model.title ]]

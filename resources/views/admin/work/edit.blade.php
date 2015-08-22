@@ -44,6 +44,17 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="display-home" ng-model="{{ $resource }}.display_home">
+                                            <label for="display-home">
+                                                Caso destacado en la home
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
                                         <textarea data-component="editor" ck-editor id="{{ $resource }}-content" ng-model="{{ $resource }}.description"></textarea>
                                     </div>
                                 </div>
