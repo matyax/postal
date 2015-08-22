@@ -608,6 +608,7 @@ input[type="submit"].button {
   background-position: center center;
   background-size: cover;
   transition: left 1s ease-in-out;
+  will-change: left;
 }
 #home-banners .banner-item .banner-text {
   padding-top: 170px;
@@ -1435,6 +1436,7 @@ input[type="submit"].button {
 }
 #cases #cases-images .cases-item {
   transition: left 1s ease-in-out;
+  will-change: left;
   position: absolute;
   top: 0;
   left: 0;
@@ -1574,6 +1576,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Sanchez', serif;
+  will-change: scroll-position;
 }
 
 /*# sourceMappingURL=main.css.map */

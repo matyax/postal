@@ -2,18 +2,18 @@
     height: 900px;
     min-height: 600px;
     max-height: 100%;
-    
+
     @media screen and (max-width: @md) and (min-width: @sm) {
         height: 450px;
         min-height: 400px;
-        max-height: 100%;  
+        max-height: 100%;
     }
-    
+
     @media screen and (max-width: @sm) {
-        min-height: 110% !important; 
+        min-height: 110% !important;
     }
-                    
-    
+
+
     background-color: @grayLight;
     #cases-description {
         position: absolute;
@@ -42,7 +42,7 @@
             height: 40px;
             line-height: 40px;
             li {
-                
+
                 display: inline-block;
                 a {
                     color: @white;
@@ -57,11 +57,11 @@
                     }
                 }
                 &:last-child {
-                    a {    
+                    a {
                         border-right: none;
                     }
                 }
-                
+
                 &.active {
                     a {
                         color: @blueDark;
@@ -72,18 +72,18 @@
                     }
                      @media screen and (max-width: @sm) {
                          display: block !important;
-                         
+
                      }
                 }
-                
+
                 @media screen and (max-width: @sm) {
                     display: none;
-                    
+
                 }
             }
         }
     }
-    
+
     #cases-images {
         position: absolute;
         top: 0;
@@ -93,6 +93,7 @@
         overflow-x: hidden;
         .cases-item {
             transition: left 1s ease-in-out;
+            will-change: left;
             position: absolute;
             top: 0;
             left: 0;
@@ -112,15 +113,15 @@
                     background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    
+
                     @media screen and (max-width: @sm) {
                            height: 25%;
                         width: 100%;
                     }
-                    
+
                     &.half {
                         height: 50%;
-                        
+
                     }
                     &.third {
                         height: 33.4%;
@@ -184,11 +185,11 @@
                         @media screen and (max-width: @sm) {
                             height: 30%;
                             width: 100%;
-                        
+
                         }
                     }
-                    
-                   
+
+
                 }
             }
     }
@@ -210,7 +211,7 @@
             background-repeat: no-repeat;
             overflow: hidden;
             text-indent: -9000px;
-            
+
             &.arrow-left {
                 left: 40px;
                 background-image: url(../img/cases/arrow-left.png);
@@ -221,5 +222,5 @@
             }
         }
     }
-    
+
 }
