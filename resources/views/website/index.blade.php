@@ -455,15 +455,15 @@
                 @foreach ($works as $work)
                     <div class="cases-item" style="left:100%;" data-category="{{ $work->work_category_id }}">
                         @foreach ($work->uploadedImages as $image)
-                            <div class="case-image third" style="background-image:url({{ $image['path'] }});"></div>
+                            <div class="case-image full" style="background-image:url({{ $image['path'] }});"></div>
                         @endforeach
                     </div>
                 @endforeach
             </div>
 
            <div id="cases-arrows">
-               <a href class="arrow-left">Anterior</a>
-               <a href class="arrow-right">Siguiente</a>
+               <a href class="arrow-left" ng-click="prev($event)">Anterior</a>
+               <a href class="arrow-right" ng-click="next($event)">Siguiente</a>
            </div>
 
             <div id="cases-description">
@@ -480,7 +480,7 @@
                        <ul>
                           @foreach ($categories as $category)
                             <li>
-                                <a href="#" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
+                                <a href="#" data-id="{{ $category->id }}" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
                             </li>
                           @endforeach
 
