@@ -23,6 +23,15 @@ class Base extends EloquentModel
         return $this->fillableRelations;
     }
 
+    public function getUploadedImagesAttribute()
+    {
+        if (! $this->images) {
+            $this->loadImages();
+        }
+
+        return $this->images;
+    }
+
     /*
      * Load user upload images
      */

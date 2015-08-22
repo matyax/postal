@@ -9,7 +9,8 @@ class WebsiteController extends Controller
     public function index()
     {
         return view('website.index')
-                ->with('categories', Category::orderBy('name', 'ASC')->get());
+                ->with('categories', Category::orderBy('position', 'ASC')->get())
+                ->with('works', Work::orderBy('position', 'ASC')->get());
     }
 
     public function migrate()

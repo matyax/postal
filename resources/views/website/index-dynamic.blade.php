@@ -453,7 +453,7 @@
         <section id="cases" class="screen full" ng-controller="WorksController">
            <div id="cases-images">
                 @foreach ($works as $work)
-                    <div class="cases-item" style="left:100%;" data-category="{{ $work->work_category_id }}">
+                    <div class="cases-item" style="left:-100%;" data-category="{{ $work->work_category_id }}">
                         @foreach ($work->uploadedImages as $image)
                             <div class="case-image third" style="background-image:url({{ $image['path'] }});"></div>
                         @endforeach
@@ -480,7 +480,7 @@
                        <ul>
                           @foreach ($categories as $category)
                             <li>
-                                <a href="#" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
+                                <a href="#" ng-click="displayCategory({{ $category->id }})">{{ $category->name }}</a>
                             </li>
                           @endforeach
 
