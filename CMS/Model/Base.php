@@ -61,7 +61,8 @@ class Base extends EloquentModel
                 'id'            => $image->id,
                 'path'          => '/' . $image->path,
                 'size'          => [ $size[0], $size[1] ],
-                'thumbnail'     => '/' . $image->thumbnail
+                'thumbnail'     => '/' . $image->thumbnail,
+                'type'          => $image->type,
             ];
         }
     }

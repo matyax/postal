@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Work;
 use App\WorkCategory;
+use App\Image;
 use Illuminate\Support\ServiceProvider;
 
 class PostalServiceProvider extends ServiceProvider
@@ -33,6 +34,18 @@ class PostalServiceProvider extends ServiceProvider
             $work->position = Work::max('position') + 1;
 
             return $work;
+        });
+
+        Image::deleted(function ($image) {
+            if (file_exists($image->path)) {
+                unlink($image->path);
+            }
+
+            if (file_exists($image->thumbnail)) {
+                unlink($image->thumbnail);
+            }
+
+            return true;
         });
     }
 

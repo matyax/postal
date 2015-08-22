@@ -60,16 +60,35 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <label>Imagen</label>
                                         <input type="file" name="images" ngf-select="onFileSelect($files)" ngf-multiple="true" ngf-pattern="'image/*" accept="image/*" />
 
                                         <div>[[ progress ]]</div>
                                     </div>
+                                </div>
 
-                                    <div class="col-md-6">
-                                        <em>Click en la imagen para borrar</em><br>
-                                        <img ng-repeat="image in images" data-id="[[ image.id ]]" width="100" ng-src="[[ image.thumbnail ]]" ng-click="deleteImage(image)" />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-striped table-bordered">
+                                            <tr ng-repeat="image in images">
+                                                <td>
+                                                    <img data-id="[[ image.id ]]" width="100" ng-src="[[ image.thumbnail ]]"  />
+                                                </td>
+                                                <td>
+                                                    <select class="form-control" ng-model="image.type">
+                                                        <option value="image">Imagen de caso</option>
+                                                        <option value="mobile">Imagen de caso (mobile)</option>
+                                                        <option value="home">Banner home</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <button class="btn btn-danger" ng-click="deleteImage(image)">
+                                                        <span class="glyphicon glyphicon-trash"></span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
 

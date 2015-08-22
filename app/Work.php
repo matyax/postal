@@ -49,7 +49,7 @@ class Work extends BaseModel
      */
     public function category()
     {
-        return $this->belongsTo('App\WorkCategory');
+        return $this->belongsTo('App\WorkCategory', 'work_category_id');
     }
 
     /*
@@ -59,8 +59,8 @@ class Work extends BaseModel
     {
         $data = parent::toArray();
 
-        if ($this->category) {
-            $data['category'] = $this->category->title;
+        if ($this->work_category_id) {
+            $data['category'] = $this->category->name;
         }
 
         return $data;

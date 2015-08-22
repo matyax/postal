@@ -226,6 +226,14 @@ class Persistence implements PersistenceInterface
 
         if ($model) {
             $model->delete();
+
+            foreach (Image::where('id_element', $id)
+                    ->where('class', $this->_resource)
+                    ->get() as $image) {
+
+                $image->delete();
+
+            }
         }
 
         return \response()->json(array(
@@ -266,6 +274,10 @@ class Persistence implements PersistenceInterface
 
             if (isset($imageData['category_id'])) {
                 $image->category_id = $imageData['category_id'];
+            }
+
+            if (isset($imageData['type'])) {
+                $image->type = $imageData['type'];
             }
 
             $image->save();
@@ -341,21 +353,13 @@ class Persistence implements PersistenceInterface
     }
 
     /*
-     * Retrieve image
+     * Delete image
      */
     public function deleteImage($id)
     {
         $image = Image::find($id);
 
         if ($image) {
-            if (file_exists($image->path)) {
-                unlink($image->path);
-            }
-
-            if (file_exists($image->path)) {
-                unlink($image->thumbnail);
-            }
-
             $image->delete();
         }
 

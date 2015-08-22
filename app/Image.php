@@ -15,7 +15,8 @@ class Image extends BaseModel {
     public $fillable = array(
         'class',
         'id_element',
-        'extension'
+        'extension',
+        'type'
     );
 
     /**
