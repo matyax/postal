@@ -15,12 +15,16 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         $work.css('left', '0');
 
         $work.addClass('displayed');
+
+        $('.description-container[data-work-id="'+$work.data('id')+'"]').fadeIn('fast');
     }
 
     function hide($works) {
         $works.css('left', '100%');
 
         $works.removeClass('displayed');
+
+        $('.description-container').fadeOut('fast');
     }
 
     $scope.displayCategory = function ($event, categoryId) {

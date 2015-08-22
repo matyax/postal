@@ -61,7 +61,8 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label>Imagen</label>
+                                        <label title="Seleccioná hasta 3 imágenes para home, caso y caso mobile">Imágenes</label>
+
                                         <input type="file" name="images" ngf-select="onFileSelect($files)" ngf-multiple="true" ngf-pattern="'image/*" accept="image/*" />
 
                                         <div>[[ progress ]]</div>
@@ -91,8 +92,6 @@
                                         </table>
                                     </div>
                                 </div>
-
-                                <input type="hidden" name="brand_id" ng-model="{{ $resource }}.brand_id">
 
                                 <input type="hidden" name="id" ng-model="{{ $resource }}.id" ng-if="{{ $resource}}.id">
                             </fieldset>

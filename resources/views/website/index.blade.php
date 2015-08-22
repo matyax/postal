@@ -450,7 +450,7 @@
         <section id="cases" class="screen full" ng-controller="WorksController">
            <div id="cases-images">
                 @foreach ($works as $work)
-                    <div class="cases-item" style="left:100%;" data-category="{{ $work->work_category_id }}">
+                    <div class="cases-item" style="left:100%;" data-id="{{ $work->id }}" data-category="{{ $work->work_category_id }}">
                         @foreach ($work->uploadedImages as $image)
                             <div class="case-image full" style="background-image:url({{ $image['path'] }});"></div>
                         @endforeach
@@ -465,9 +465,11 @@
 
             <div id="cases-description">
                <div class="container">
-                   <div class="col8 center description-container">
-                       Desarrollo de estrategia de comunicación para un nuevo sistema de seguros de personal en Barrios Privados de Mendoza.
-                   </div>
+                    @foreach ($works as $work)
+                        <div class="col8 center description-container" style="display: none" data-work-id="{{ $work->id }}" >
+                            {!! $work->description !!}
+                        </div>
+                    @endforeach
                </div>
            </div>
 
