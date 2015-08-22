@@ -1,0 +1,375 @@
+td.fc-day.present {
+    background-color: green;
+}
+
+td.fc-day.absent {
+    background-color: @brand-danger;
+}
+
+.fc-day-number {
+    color: black;
+}
+
+#calendar {
+    &.fc {
+        position: relative;
+    }
+    * table {
+        background-color: transparent !important;
+    }
+    .fc-toolbar {
+        .fc-center {
+            position: absolute;
+            width: 100%;
+            top: 4px;
+            left: 0;
+            text-align: center;
+            z-index: 0;
+
+            h2 {
+                display: block;
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: @gray-base;
+            }
+        }
+        .fc-left, .fc-right {
+            position: relative;
+            z-index: 10;
+        }
+    }
+    .fc-head {
+        thead {
+            background-color: lighten(@gray-base, 30%);
+            tr {
+                th {
+                    color: @text-light;
+                    border-right-color: @gray-light;
+                    font-weight: normal;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .fc-body {
+
+    }
+
+    .fc-row.fc-week.fc-widget-content {
+        //Lo que parece ser el background de cada fila (semana)
+        .fc-bg{
+            z-index: 6;
+            table tbody td{
+                //Esto seria el backgorund de cada dia y aca estan los inputs
+                &.fc-day {
+                    position: relative;
+                    cursor: pointer;
+                    &.fc-other-month {
+                        background-color: @other-month-bgr;
+                        opacity: .5;
+                    }
+
+
+                    padding-top: 43px;
+
+                    &.present  {
+                        background-color: transparent;
+                        input {
+                            opacity: .4;
+                            transition: all .3s;
+                        }
+                    }
+
+                    &.absent {
+                        background-color: @brand-danger;
+                        opacity: .2 !important;
+                        border-color: lighten(@brand-danger, 30%);
+                        input {
+                            display: none;
+                        }
+                        &:before {
+                            content: 'Habilitar';
+                            color: #FFF;
+                        }
+
+
+
+                    }   
+                    &:before {
+                        content: 'Deshabilitar';
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        color: @brand-danger;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 0.05em;
+                        opacity: 0;
+                    }
+
+                }
+                &:hover {
+                    &.present {
+                        input {
+                            opacity: 1;
+                        }
+                        &:before {
+                            opacity: .3;
+                        }
+                    }
+                    &.absent {
+                        &:before {
+                            opacity: 1;
+                        }
+
+                    }  
+
+                }
+            }
+        }
+    }
+
+    //Lo que parece ser el contenido de cada fila (semana)
+    .fc-content-skeleton {
+        z-index: 4;
+        //Esto seria el numero de cada dia
+        table {
+            background-color: transparent !important;
+            thead td{
+                &.fc-day-number {
+                    font-size: 18px;
+                    font-weight: 100;
+                    padding-right: 6px;
+                    &.fc-other-month {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+
+    &.worker-timesheet {
+        .fc-row.fc-week.fc-widget-content {
+        
+            .fc-bg {
+                .present {
+
+                    opacity: .3;
+                    background-color: @present-bgr !important;
+                    border-color: lighten(@present-bgr, 10%);
+                    &:before {
+                        color: @gray-base;
+                    }
+                    &:hover {
+                        &:before {
+                             opacity: 1;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#calendar.advisor-timesheet {
+
+
+
+    td.fc-day.present {
+
+    }
+
+    td.fc-day.absent {
+        background-color: red;
+    }
+
+    .fc-day {
+        position: relative;
+    }
+
+    .fc-day {
+        input {
+            /*
+            width: calc(99% - 24px);
+            padding: 3px 6px;
+            position: absolute;
+            z-index: 9999;
+            height: 16px;
+            line-height: 16px;
+            font-eize: 16px;
+            left: calc((100% - 99% + 12) / 2);*/
+            display: inline-block;
+            width: 43px;
+            height: 10px;
+            font-size: 12px;
+            padding: 6px;
+            margin: 2px 2px;
+            text-align: center;
+        }
+
+        .start-hour {
+            top: 10px;
+        }
+
+        .end-hour {
+            top: 40px;
+        }
+
+        .start-hour2 {
+            top: 70px;
+        }
+
+        .end-hour2 {
+            top: 100px;
+        }
+    }
+
+    .absent {
+        input {
+            display: none;
+        }
+    }
+
+    .present {
+        input {
+            display: inline-block;
+        }
+    }
+}
+
+@high-demand-bg        : url(/turnos/img/vw/no-availability.png);
+@medium-demand-bg      : #fff3e9;
+@low-demand-bg         : #dff7fd;
+
+@high-demand-color     : orangered;
+@medium-demand-color   : #948e89;
+@low-demand-color      : #00b3eb;
+
+.shift-calendar {
+    .high-demand {
+        background-color: @high-demand-color;
+        background-image: @high-demand-bg;
+    }
+
+    .medium-demand {
+        background-color: @medium-demand-bg;
+        color: @medium-demand-color;
+    }
+
+    .low-demand {
+        background-color: @low-demand-bg;
+        color: @low-demand-color;
+    }
+}
+
+.shift-calendar {
+    .fc-day {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .fc-day:hover,
+    .fc-day-number:hover {
+        opacity: 0.5;
+    }
+
+    .shifts-amount {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        margin: auto;
+        width: 2em;
+        height: 1em;
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: bold;
+        opacity: 0.3;
+        color: black;
+        text-align: center;
+    }
+
+    td.fc-today {
+        background-color: #b3d6e6;
+    }
+
+    .high-demand {
+        background-color: @high-demand-color;
+        background-image: @high-demand-bg;
+    }
+
+    .medium-demand {
+        background-color: @medium-demand-bg;
+        color: @medium-demand-color;
+    }
+
+    .low-demand {
+        background-color: @low-demand-bg;
+        color: @low-demand-color;
+    }
+}
+
+.color-reference {
+
+    margin-bottom: 2em;
+    
+    .reference {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 10px;
+        .color {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid @gray-lines;
+            border-radius: 3px;
+            
+        }
+        .name {
+            display: inline-block;
+            height: 20px;
+            line-height: 19px;
+            vertical-align: top;
+            font-size: 13px;
+        }
+        
+    }
+    
+    .today {
+        background-color: #b3d6e6;
+        border-color: #2173ab;
+        height: 1.5em;
+    }
+
+    .high-demand {
+        background-color: @high-demand-color;
+        background-image: @high-demand-bg;
+        border-color: #88939f;
+        height: 1.5em;
+    }
+
+    .medium-demand {
+        background-color: @medium-demand-bg;
+        color: @medium-demand-color;
+        border-color: #8b5927;
+        height: 1.5em;
+    }
+
+    .low-demand {
+        background-color: @low-demand-bg;
+        color: @low-demand-color;
+        border-color: #00b0ea;
+        height: 1.5em;
+    }
+}
+
+.panel-body .color-reference {
+    margin: -(@grid-gutter-width*0.75) -(@grid-gutter-width*0.75) (@grid-gutter-width);
+    padding:  (@grid-gutter-width*0.75) (@grid-gutter-width*0.75) (@grid-gutter-width/2);
+    border-bottom: 1px solid @gray-lines;
+}

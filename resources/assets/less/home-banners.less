@@ -13,20 +13,21 @@
         height: 100%;
         background-position: center center;
         background-size: cover;
+        transition: left 1s ease-in-out;
         .banner-text {
             padding-top: 170px;
             .container();
-            
+
             h3 {
                 font-size: @h3;
                 color: @white;
                 background-color: @gray;
                 display: inline-block;
-              
+
                 line-height: (@h3*1.3);
                 padding: @paddingBase;
                 margin: 0;
-                
+
                 @media screen and (max-width: @sm)  {
                     display: block;
                     position: absolute;
@@ -36,22 +37,22 @@
                 }
             }
             .link {
-        
+
             }
-            
-            @media screen and (max-width: @sm)  {      
+
+            @media screen and (max-width: @sm)  {
                 height: 80%;
                 position: relative;
                 padding-top: 0px;
-                
-                
+
+
                 .link {
                     position: absolute;
                     bottom: -50px;
                 }
             }
-    
-            
+
+
         }
     }
 }

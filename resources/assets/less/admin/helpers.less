@@ -1,0 +1,24 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &.vcenter {
+        display: table;
+        width: 100%;
+        > .container, .container-fluid {
+            display: table-cell;
+            vertical-align: middle;
+
+        }
+    }
+}
+
+.glow {
+    .animation(pulse 1.5s linear infinite)
+}
+
+.keyframes(pulse, {
+  from { color: initial; }
+  50% { color: red; }
+  to { color: initial; }
+});

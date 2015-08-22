@@ -1,0 +1,192 @@
+/* FORMS */
+
+fieldset {
+    padding: 0 @grid-gutter-width*2 0;
+    margin: @grid-gutter-width -(@grid-gutter-width*2) 0;
+    border: 0;
+    // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+    // so we reset that to ensure it behaves more like a standard block element.
+    // See https://github.com/twbs/bootstrap/issues/12359.
+    min-width: 0;
+    border-bottom: 1px solid @gray-light-more;
+    &:last-child {
+        margin-bottom: -@grid-gutter-width * 1.5;
+        border-bottom: none;
+        padding: 0 @grid-gutter-width*2 @grid-gutter-width*2 !important;
+    }    
+    &:first-child {
+        margin-top: -(@grid-gutter-width * 0.7);
+         legend {
+            border-radius: @border-radius-small @border-radius-small 0 0;
+        }
+    }
+} 
+
+legend {
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+    font-size: (@font-size-base);
+    line-height: inherit;
+    color: @legend-color;
+    border: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 -(@grid-gutter-width * 1.2) @grid-gutter-width -(@grid-gutter-width * 1.2);
+    padding: 5px (@grid-gutter-width * 1.2);
+    background-color: lighten(@gray-base, 30%);
+}
+
+label {
+    display: inline-block;
+    max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: @font-size-small - 1;
+    color: @gray;
+}
+
+.tab-pane  {
+    fieldset {
+        margin-top: 0 !important;
+    }
+}
+
+/* BUTTONS */
+
+.btn {
+
+
+}
+
+/* TOOLTIPS */
+
+.tooltip {
+    text-transform: uppercase;
+    &.right  { margin-left:  13px; padding: 0 @tooltip-arrow-width; }
+    &.left   { margin-left: -13px; padding: 0 @tooltip-arrow-width; }
+}
+
+/* TABLE CLASSES */
+.table-responsive {
+    border: 5px solid #FFF;
+    background-color: #FFF;
+}
+
+
+.table {
+    &.table-bordered {    
+        border: 2px solid @table-border-color;
+    }
+    .small-td {
+        width: 180px;
+        min-width: 180px;
+    }
+    .medium-td {
+        width: 320px;
+        min-width: 240px;
+    }
+
+    .full-td {
+        width: 100%;
+    }
+    .email-td {
+        word-break: break-all;
+        min-width: 200px;
+    }
+
+    th {
+        &.checkbox-td {
+            width: 80px;
+            min-width: 80px;
+            font-size: 12px;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+    }
+    td {
+        &.checkbox-td {
+            width: 80px;
+            min-width: 80px;
+            padding-left: 4px;
+            padding-right: 4px;
+            .checkbox {
+                text-align: center;
+                margin: 0;
+                padding-left: 24px;    
+            }
+            input {
+                text-align: center;
+            }
+        }
+    }
+    &.table-double {
+        thead {
+            position: relative;
+            tr {
+                position: relative;
+            }
+        }
+        &.table-hover {
+            tbody {
+                tr:hover {
+                    background-color: darken(@table-double-bg, 10%);
+
+                    .double-table-td {
+                        background-color: darken(@table-double-bg, 10%) !important;  
+                    }
+
+                }
+            }
+        }
+
+
+        .double-table-corner {
+            width: 223px;
+            min-width: 223px;
+            position: absolute;
+            z-index: 10;
+            height: 90%;
+            background-color: lighten(@gray-base, 30%);
+            left: 15px;
+        }
+        .double-table-corner-placeholder {
+            width: 220px;
+            min-width: 220px;
+        }
+        .double-table-td {
+            background-color: @table-double-bg;
+            width: 223px;
+            min-width: 223px;
+            position: absolute;
+            z-index: 10;
+            left: 15px;
+        }
+        .double-table-td-placeholder {
+            background-color: @table-double-bg;
+            width: 220px;
+            min-width: 220px;
+
+        }
+    }
+
+
+
+    thead {
+        background-color: lighten(@gray-base, 30%);
+        tr {
+            th {
+                color: @text-light;
+                border-right-color: @gray-light;
+                font-weight: normal;
+            }
+        }
+    }
+
+    td {
+        .btn {
+            margin-top: -4px;
+        }
+    }
+}

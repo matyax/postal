@@ -56,9 +56,9 @@
                         @foreach ($homeWorks as $work)
                             @foreach ($work->uploadedImages as $image)
                                 @if ($image['type'] == 'home')
-                                    <div class="banner-item" style="background-image:url({{ $image['path'] }});">
+                                    <div class="banner-item" style="background-image:url({{ $image['path'] }}); left: 100%">
                                         <div class="banner-text">
-                                            <h3>UTN REGIONAL MENDOZA</h3>
+                                            <h3>{{ $work->title }}</h3>
                                             <div class="link">
                                                 <a href="#cases" ng-click="goToCase($event, {{ $work->work_category_id }}, {{ $work->id }})" class="home-button">
                                                     ver más
