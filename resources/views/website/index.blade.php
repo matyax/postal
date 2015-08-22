@@ -49,445 +49,439 @@
             </div>
         </header>
 
-        <section id="home" class="screen">
-            <div class="wrapper">
-                <div id="home-banners">
-                    <div class="banner-item" style="background-image:url(/img/home-banners/utn.jpg);">
-                        <div class="banner-text">
-                            <h3>UTN REGIONAL MENDOZA</h3>
-                            <div class="link">
-                                <a href="#cases" class="home-button">ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-item" style="background-image:url(/img/home-banners/sul.jpg); left:100%;">
-                        <div class="banner-text">
-                            <h3>SUL MINERIA</h3>
-                             <div class="link">
-                                <a href="#cases" class="home-button">ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner-item" style="background-image:url(/img/home-banners/cata.jpg); left:200%;">
-                        <div class="banner-text">
-                            <h3>CATA</h3>
-                            <div class="link">
-                                <a href="#cases" class="home-button">ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="agency" class="screen">
-            <div id="agency-process">
-                <div class="container">
-                    <div class="process-block-list">
-                        <div class="process-block first">
-                            <div class="text first-text">
-                                Somos un equipo<br>de profesionales<br>dedicados al <strong>marketing</strong><br>y a la <strong>comunicación</strong><br>desde hace más<br>de una década.
-                            </div>
-                        </div>
-                        <div class="process-block second">
-                            <div class="image plane">
-                                <img src="/img/agency/plane.png" alt="">
-                            </div>
-                        </div>
-                        <div class="process-block third">
-                            <div class="text third-text">
-                            Trabajamos en<br>conjunto con nuestros<br>clientes en una relación de <strong>confianza</strong>, convirtiéndonos en socios <strong>estratégicos</strong> articulando a la perfección todas las acciones de la
-                                empresa.</div>
-                        </div>
-
-                        <div class="process-block fourth">
-                            <div class="text">1 · Investigar</div>
-                            <div class="image">
-                                <img src="/img/agency/research.png" alt="">
-                            </div>
-                        </div>
-                        <div class="process-block fifth">
-                            <div class="text">2 · Pensar</div>
-                            <div class="image">
-                                <img src="/img/agency/think.png" alt="">
-                            </div>
-                        </div>
-                        <div class="process-block sixth">
-                            <div class="text">3 · Hacer</div>
-                            <div class="image">
-                                <img src="/img/agency/make.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="agency-team" class="clearfix">
-                <div class="container">
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar castellino">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Eduardo Castellino
-
-                                   </div>
-                                   <div class="team-member-title">
-                                       Director
-                                   </div>
-                              </div>
-                        </div>
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar sanchez">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Ana Clara Sánchez
-                                   </div>
-                                   <div class="team-member-title">
-                                       Branding
-                                   </div>
-                              </div>
-                        </div>
-                        <div class="team-member col3">
-                             <div class="team-member-avatar mariani">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Pablo Mariani
-                                   </div>
-                                   <div class="team-member-title">
-                                       Eventos
-                                   </div>
-                              </div>
-                        </div>
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar maldonado">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Soledad Maldonado
-                                   </div>
-                                   <div class="team-member-title">
-                                       Coordinadora de cuentas
-                                   </div>
-                              </div>
-                        </div>
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar segovia">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Alejandra Segovia
-
-                                   </div>
-                                   <div class="team-member-title">
-                                       Diseño Gráfico
-                                   </div>
-                              </div>
-                        </div>
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar esteller" >
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Ignacio Esteller
-                                   </div>
-                                   <div class="team-member-title">
-                                       Social Media
-                                   </div>
-                              </div>
-                        </div>
-
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar perlino">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Ana Perlino
-                                   </div>
-                                   <div class="team-member-title">
-                                       Directora creativa
-                                   </div>
-                              </div>
-                        </div>
-
-                        <div class="team-member col3">
-                             <div class="team-member-avatar gonzalez">
-
-                             </div>
-                              <div class="team-member-data">
-                                   <div class="team-member-name">
-                                       Ezequiel Gonzalez
-
-
-                                   </div>
-                                   <div class="team-member-title">
-                                       Diseño Gráfico
-                                   </div>
-                              </div>
-                        </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="screen" ng-controller="NavigationController">
-            <div id="services-cards">
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/asesoramiento.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Asesoramiento comercial</h3>
-                            <p>A partir del análisis del mercado de su negocio, confeccionamos e implementamos planes de comunicación que brinden soluciones integrales para la activación de los objetivos comerciales.</p>
-                             <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/imagen.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Identidad  e imagen</h3>
-                            <p>Desarrollamos marcas y personalidades desde cero, implementando la identidad definida en toda la organización.</p>
-                            <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/multimedia.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Multimedia</h3>
-                            <p>Desarrollamos piezas combinando múltiples medios físicos o digitales. Creamos y editamos contenidos audiovisuales. Generamos interfaces web, sitemas/usuarios y piezas interactivas.</p>
-                              <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/medios.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Medios</h3>
-                            <p>Seleccionamos los medios idóneos para su empresa y garantizamos - gracias a nuestra vasta experiencia en el rubro -  excelentes acuerdos comerciales, logrando un plan de medios óptimo en relación costo - contacto.</p>
-                              <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/eventos.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Eventos</h3>
-                            <p>Detectamos eventos de interés para su empresa e implementamos su participación en los mismos. De igual manera, desarrollamos eventos corporativos de acuerdo a cada necesidad específica.</p>
-                             <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="service-card">
-                    <div class="content">
-                        <div class="image" style="background-image: url(/img/services/socialmedia.jpg);">
-
-                        </div>
-                        <div class="text">
-                            <h3>Social Media</h3>
-                            <p>Generamos y gestionamos plataformas de comunicación en línea, utilizando soportes interactivos logrando un impacto directo e inmediato..</p>
-                             <div class="action">
-                                 <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="services-clients">
-                <div class="container">
-                    <h2>NUESTROS CLIENTES</h2>
-                    <div id="client-list">
-                        <div class="client-item">
-                            <div class="image">
-                                <img src="/img/clients/albura.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="image">
-                                <img src="/img/clients/alvear.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="image">
-                                <img src="/img/clients/andesbrix.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/boxautoexpress.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/cata.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="image">
-                                <img src="/img/clients/cataturismo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                            <div class="image">
-                                <img src="/img/clients/catacargo.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/chamber.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/maipu.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/encina.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/newtech.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/maza.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/prototype.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/sulmineria.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/taker.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/tbm.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/tresblasones.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/trivento.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/utn.png" alt="">
-                            </div>
-                        </div>
-                        <div class="client-item">
-                             <div class="image">
-                                <img src="/img/clients/vaquie.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cases" class="screen full" ng-controller="WorksController">
-           <div id="cases-images">
-                @foreach ($works as $work)
-                    <div class="cases-item" style="left:100%;" data-id="{{ $work->id }}" data-category="{{ $work->work_category_id }}">
-                        @foreach ($work->uploadedImages as $image)
-                            <div class="case-image full" style="background-image:url({{ $image['path'] }});"></div>
+        <div ng-controller="WorksController">
+            <section id="home" class="screen">
+                <div class="wrapper">
+                    <div id="home-banners">
+                        @foreach ($homeWorks as $work)
+                            @foreach ($work->uploadedImages as $image)
+                                @if ($image['type'] == 'home')
+                                    <div class="banner-item" style="background-image:url({{ $image['path'] }});">
+                                        <div class="banner-text">
+                                            <h3>UTN REGIONAL MENDOZA</h3>
+                                            <div class="link">
+                                                <a href="#cases" ng-click="goToCase($event, {{ $work->work_category_id }}, {{ $work->id }})" class="home-button">
+                                                    ver más
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
                         @endforeach
                     </div>
-                @endforeach
-            </div>
+                </div>
+            </section>
 
-           <div id="cases-arrows">
-               <a href class="arrow-left" ng-click="prev($event)">Anterior</a>
-               <a href class="arrow-right" ng-click="next($event)">Siguiente</a>
-           </div>
+            <section id="agency" class="screen">
+                <div id="agency-process">
+                    <div class="container">
+                        <div class="process-block-list">
+                            <div class="process-block first">
+                                <div class="text first-text">
+                                    Somos un equipo<br>de profesionales<br>dedicados al <strong>marketing</strong><br>y a la <strong>comunicación</strong><br>desde hace más<br>de una década.
+                                </div>
+                            </div>
+                            <div class="process-block second">
+                                <div class="image plane">
+                                    <img src="/img/agency/plane.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process-block third">
+                                <div class="text third-text">
+                                Trabajamos en<br>conjunto con nuestros<br>clientes en una relación de <strong>confianza</strong>, convirtiéndonos en socios <strong>estratégicos</strong> articulando a la perfección todas las acciones de la
+                                    empresa.</div>
+                            </div>
 
-            <div id="cases-description">
-               <div class="container">
+                            <div class="process-block fourth">
+                                <div class="text">1 · Investigar</div>
+                                <div class="image">
+                                    <img src="/img/agency/research.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process-block fifth">
+                                <div class="text">2 · Pensar</div>
+                                <div class="image">
+                                    <img src="/img/agency/think.png" alt="">
+                                </div>
+                            </div>
+                            <div class="process-block sixth">
+                                <div class="text">3 · Hacer</div>
+                                <div class="image">
+                                    <img src="/img/agency/make.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="agency-team" class="clearfix">
+                    <div class="container">
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar castellino">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Eduardo Castellino
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Director
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar sanchez">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ana Clara Sánchez
+                                       </div>
+                                       <div class="team-member-title">
+                                           Branding
+                                       </div>
+                                  </div>
+                            </div>
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar mariani">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Pablo Mariani
+                                       </div>
+                                       <div class="team-member-title">
+                                           Eventos
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar maldonado">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Soledad Maldonado
+                                       </div>
+                                       <div class="team-member-title">
+                                           Coordinadora de cuentas
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar segovia">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Alejandra Segovia
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Diseño Gráfico
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar esteller" >
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ignacio Esteller
+                                       </div>
+                                       <div class="team-member-title">
+                                           Social Media
+                                       </div>
+                                  </div>
+                            </div>
+
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar perlino">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ana Perlino
+                                       </div>
+                                       <div class="team-member-title">
+                                           Directora creativa
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar gonzalez">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ezequiel Gonzalez
+
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Diseño Gráfico
+                                       </div>
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="screen" ng-controller="NavigationController">
+                <div id="services-cards">
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/asesoramiento.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Asesoramiento comercial</h3>
+                                <p>A partir del análisis del mercado de su negocio, confeccionamos e implementamos planes de comunicación que brinden soluciones integrales para la activación de los objetivos comerciales.</p>
+                                 <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/imagen.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Identidad  e imagen</h3>
+                                <p>Desarrollamos marcas y personalidades desde cero, implementando la identidad definida en toda la organización.</p>
+                                <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/multimedia.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Multimedia</h3>
+                                <p>Desarrollamos piezas combinando múltiples medios físicos o digitales. Creamos y editamos contenidos audiovisuales. Generamos interfaces web, sitemas/usuarios y piezas interactivas.</p>
+                                  <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/medios.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Medios</h3>
+                                <p>Seleccionamos los medios idóneos para su empresa y garantizamos - gracias a nuestra vasta experiencia en el rubro -  excelentes acuerdos comerciales, logrando un plan de medios óptimo en relación costo - contacto.</p>
+                                  <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/eventos.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Eventos</h3>
+                                <p>Detectamos eventos de interés para su empresa e implementamos su participación en los mismos. De igual manera, desarrollamos eventos corporativos de acuerdo a cada necesidad específica.</p>
+                                 <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="content">
+                            <div class="image" style="background-image: url(/img/services/socialmedia.jpg);">
+
+                            </div>
+                            <div class="text">
+                                <h3>Social Media</h3>
+                                <p>Generamos y gestionamos plataformas de comunicación en línea, utilizando soportes interactivos logrando un impacto directo e inmediato..</p>
+                                 <div class="action">
+                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="services-clients">
+                    <div class="container">
+                        <h2>NUESTROS CLIENTES</h2>
+                        <div id="client-list">
+                            <div class="client-item">
+                                <div class="image">
+                                    <img src="/img/clients/albura.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                <div class="image">
+                                    <img src="/img/clients/alvear.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                <div class="image">
+                                    <img src="/img/clients/andesbrix.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/boxautoexpress.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/cata.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                <div class="image">
+                                    <img src="/img/clients/cataturismo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                <div class="image">
+                                    <img src="/img/clients/catacargo.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/chamber.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/maipu.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/encina.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/newtech.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/maza.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/prototype.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/sulmineria.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/taker.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/tbm.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/tresblasones.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/trivento.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/utn.png" alt="">
+                                </div>
+                            </div>
+                            <div class="client-item">
+                                 <div class="image">
+                                    <img src="/img/clients/vaquie.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cases" class="screen full">
+               <div id="cases-images">
                     @foreach ($works as $work)
-                        <div class="col8 center description-container" style="display: none" data-work-id="{{ $work->id }}" >
-                            {!! $work->description !!}
+                        <div class="cases-item" style="left:100%;" data-id="{{ $work->id }}" data-category="{{ $work->work_category_id }}">
+                            @foreach ($work->uploadedImages as $image)
+                                <div class="case-image full" style="background-image:url({{ $image['path'] }});"></div>
+                            @endforeach
                         </div>
                     @endforeach
-               </div>
-           </div>
+                </div>
 
-           <div id="cases-nav">
-               <div class="container">
-                   <nav class="col8 center">
-                       <ul>
-                          @foreach ($categories as $category)
-                            <li>
-                                <a href="#" data-id="{{ $category->id }}" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
-                            </li>
-                          @endforeach
-
-                       </ul>
-                   </nav>
+               <div id="cases-arrows">
+                   <a href class="arrow-left" ng-click="prev($event)">Anterior</a>
+                   <a href class="arrow-right" ng-click="next($event)">Siguiente</a>
                </div>
-           </div>
-        </section>
+
+                <div id="cases-description">
+                   <div class="container">
+                        @foreach ($works as $work)
+                            <div class="col8 center description-container" style="display: none" data-work-id="{{ $work->id }}" >
+                                {!! $work->description !!}
+                            </div>
+                        @endforeach
+                   </div>
+               </div>
+
+               <div id="cases-nav">
+                   <div class="container">
+                       <nav class="col8 center">
+                           <ul>
+                              @foreach ($categories as $category)
+                                <li>
+                                    <a href="#" data-id="{{ $category->id }}" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
+                                </li>
+                              @endforeach
+
+                           </ul>
+                       </nav>
+                   </div>
+               </div>
+            </section>
+        </div>
 
         <section id="contact" class="screen">
             <a href class="map-link"></a>

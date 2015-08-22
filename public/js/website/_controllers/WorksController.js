@@ -51,13 +51,14 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         hide($current);
         show($next);
-    }
+    };
 
-    $scope.next = function ($event) {
+    $scope.next = function ($event, $next) {
         $event.preventDefault();
 
-        var $current = $('.cases-item.displayed'),
-            $next    = $current.prev('[data-category="'+currentId+'"]');
+        var $current = $('.cases-item.displayed');
+
+        $next = $next || $current.prev('[data-category="'+currentId+'"]');
 
         if (! $next.length) {
             $next = $('.cases-item[data-category="'+currentId+'"]:last');
@@ -65,5 +66,15 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         hide($current);
         show($next);
-    }
+    };
+
+    $scope.goToCase = function($event, categoryId, workId) {
+        $scope.displayCategory($event, categoryId);
+
+        $scope.next($event, $('.cases-item[data-id="' + workId + '"]'));
+
+        $('html, body').animate({
+            scrollTop: $('#cases').position().top
+        }, 1000, 'swing');
+    };
 });

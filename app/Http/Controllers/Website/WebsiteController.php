@@ -10,7 +10,8 @@ class WebsiteController extends Controller
     {
         return view('website.index')
                 ->with('categories', Category::orderBy('position', 'ASC')->get())
-                ->with('works', Work::orderBy('position', 'ASC')->get());
+                ->with('works', Work::orderBy('position', 'ASC')->get())
+                ->with('homeWorks', Work::where('display_home', true)->orderBy('position', 'ASC')->get());
     }
 
     public function migrate()
