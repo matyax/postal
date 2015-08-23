@@ -3,7 +3,7 @@ $(function () {
 });
 
 function initComponents() {
-    $('[title]').tooltip();
+    $('[title]:not(.cke_button)').tooltip();
 
     $('[data-component="editor"]').each(function () {
         if ($(this).data('initialized')) {
