@@ -225,7 +225,7 @@
                                  </div>
                                   <div class="team-member-data">
                                        <div class="team-member-name">
-                                           Ezequiel Gonzalez
+                                           Ezequiel González
 
 
                                        </div>

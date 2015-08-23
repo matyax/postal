@@ -78,9 +78,9 @@
                                                 </td>
                                                 <td>
                                                     <select class="form-control" ng-model="image.type">
-                                                        <option value="image">Imagen de caso</option>
+                                                        <option value="image">Imagen de caso (1920x900)</option>
                                                         <option value="mobile">Imagen de caso (mobile)</option>
-                                                        <option value="home">Banner home</option>
+                                                        <option value="home">Banner home (1920x1300)</option>
                                                     </select>
                                                 </td>
                                                 <td>
