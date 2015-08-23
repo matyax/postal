@@ -24,6 +24,8 @@ Route::group(['namespace' => 'Website'], function () {
     ]);
 
     Route::get('/migrate', 'WebsiteController@migrate');
+
+    Route::post('/message', 'WebsiteController@message');
 });
 
 /*

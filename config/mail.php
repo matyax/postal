@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'noreply@postalurbana.com.ar', 'name' => 'Postal Urbana'],
+	'from' => ['address' => env('MAIL_USERNAME'), 'name' => env('MAIL_NAME')],
 
 	/*
 	|--------------------------------------------------------------------------

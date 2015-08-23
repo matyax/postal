@@ -483,7 +483,7 @@
             </section>
         </div>
 
-        <section id="contact" class="screen">
+        <section id="contact" class="screen" ng-controller="ContactController">
             <a href class="map-link"></a>
             <div class="wrapper">
 
@@ -497,28 +497,36 @@
                             </div>
                             <div class="title"></div>
                             <p>
-                                hola@postalurbana.com.ar <br>
+                                <a href="mailto:hola@postalurbana.com.ar">hola@postalurbana.com.ar</a> <br>
                                 Olascoaga 572 - Mendoza · Argentina <br>
                                 +54 (261) 4292103
                             </p>
 
                             <div class="form">
-                                <form>
-                                    <div class="form-half-col">
-                                       <label>nombre y apellido</label>
-                                        <input type="text">
+                                <form novalidate ng-submit="sendForm()" name="contactForm">
+                                    <div ng-show="contactSuccess === null">
+                                        <div class="form-half-col">
+                                           <label>nombre y apellido</label>
+                                            <input type="text" ng-required="true" name="name" ng-model="contact.name">
+                                        </div>
+                                        <div class="form-half-col">
+                                            <label>email</label>
+                                            <input type="email" ng-required="true" name="email" ng-model="contact.email">
+                                        </div>
+                                        <div class="form-full-col">
+                                            <label>consulta</label>
+                                            <textarea ng-model="contact.message" name="message" ng-required="true" rows="5"></textarea>
+                                            <input type="submit" value="[[ buttonStatus ]]" class="button" ng-disabled="contactForm.$invalid" >
+                                        </div>
                                     </div>
-                                    <div class="form-half-col">
-                                       <label>email</label>
-                                        <input type="email">
-                                    </div>
-                                    <div class="form-full-col">
-                                       <label>consulta</label>
-                                        <textarea  rows="5"></textarea>
-                                        <input type="submit" value="Enviar" class="button">
+                                    <div class="form-half-col" ng-show="contactSuccess === true">
+                                        ¡Gracias por contactarnos! Te estaremos respondiendo a la brevedad
                                     </div>
 
-
+                                    <div class="form-half-col" ng-show="contactSuccess === false">
+                                        Estamos realizando tareas de mantenimiento. Por favor escribinos a
+                                        <a href="mailto:hola@postalurbana.com.ar">hola@postalurbana.com.ar</a>.
+                                    </div>
                                 </form>
                             </div>
                         </div>
