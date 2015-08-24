@@ -21,6 +21,10 @@ class WorkCategory extends BaseModel {
     /**
      * Relations
      */
+    public function works()
+    {
+        return $this->hasMany('App\Work', 'work_category_id');
+    }
 
     /**
      * Methods

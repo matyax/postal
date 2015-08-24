@@ -442,12 +442,18 @@
 
             <section id="cases" class="screen full">
                <div id="cases-images">
-                    @foreach ($works as $work)
-                        <div class="cases-item" style="left:100%;" data-id="{{ $work->id }}" data-category="{{ $work->work_category_id }}">
-                            @foreach ($work->uploadedImages as $image)
-                                <div class="case-image full" style="background-image:url({{ $image['path'] }});"></div>
-                            @endforeach
-                        </div>
+                    @foreach ($categories as $category)
+                        @foreach ($category->works as $work)
+                            <div class="cases-item" style="left:100%;" data-id="{{ $work->id }}" data-category="{{ $work->work_category_id }}">
+                                @foreach ($work->uploadedImages as $image)
+                                    @if ($image['type'] == 'mobile')
+                                        <div class="case-image full hidden-md hidden-lg" style="background-image:url({{ $image['path'] }});"></div>
+                                    @elseif ($image['type'] == 'image')
+                                        <div class="case-image full hidden-sm hidden-xs" style="background-image:url({{ $image['path'] }});"></div>
+                                    @endif
+                                @endforeach
+                            </div>
+                        @endforeach
                     @endforeach
                 </div>
 
@@ -493,7 +499,7 @@
                         <div class="contact-block">
                             <div class="social-links">
                                 <a href="https://www.facebook.com/postalurbana" target="_blank" class="facebook">Facebook</a>
-                                <a href="https://www.facebook.com/postalurbana" target="_blank" class="twitter">Twitter</a>
+                                <a href="https://twitter.com/PostalU" target="_blank" class="twitter">Twitter</a>
                             </div>
                             <div class="title"></div>
                             <p>

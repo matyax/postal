@@ -4,7 +4,7 @@ angular.module('postalApp').controller('NavigationController', function ($scope)
     $scope.navigateTo = function ($event) {
         $event.preventDefault();
 
-        var targetId  = $(event.currentTarget).attr('href'),
+        var targetId  = $($event.currentTarget).attr('href'),
             $target   = $(targetId),
             scrollTop = $target.position().top;
 

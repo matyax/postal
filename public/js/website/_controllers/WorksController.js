@@ -1,7 +1,7 @@
 angular.module('postalApp').controller('WorksController', function ($scope) {
 
-    var currentId = null,
-        interval  = null;
+    var currentCategoryId = null,
+        interval          = null;
 
     init();
 
@@ -52,11 +52,18 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
     }
 
     function showWork($work) {
+        if ($work.data('category') != currentCategoryId) {
+            currentCategoryId = $work.data('category');
+
+            $('#cases-nav .active').removeClass('active');
+            $('#cases-nav a[data-id="' + currentCategoryId + '"]').parent().addClass('active');
+        }
+
         $work.css('left', '0');
 
         $work.addClass('displayed');
 
-        $('.description-container[data-work-id="'+$work.data('id')+'"]').fadeIn('fast');
+        $('.description-container[data-work-id="'+$work.data('id')+'"]').show();
     }
 
     function hideWork($works) {
@@ -64,16 +71,18 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         $works.removeClass('displayed');
 
-        $('.description-container').fadeOut('fast');
+        $('.description-container').hide();
     }
 
     $scope.displayCategory = function ($event, categoryId) {
-        $event.preventDefault();
+        if ($event) {
+            $event.preventDefault();
+        }
 
         $('#cases-nav .active').removeClass('active');
         $('#cases-nav a[data-id="' + categoryId + '"]').parent().addClass('active');
 
-        currentId = categoryId;
+        currentCategoryId = categoryId;
 
         hideWork($('.cases-item'));
         showWork($('.cases-item[data-category="'+categoryId+'"]:first'));
@@ -83,10 +92,10 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         $event.preventDefault();
 
         var $current = $('.cases-item.displayed'),
-            $next    = $current.prev('[data-category="'+currentId+'"]');
+            $next    = $current.prev('.cases-item');
 
         if (! $next.length) {
-            $next = $('.cases-item[data-category="'+currentId+'"]:first');
+            $next = $('.cases-item:last');
         }
 
         hideWork($current);
@@ -98,10 +107,10 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         var $current = $('.cases-item.displayed');
 
-        $next = $next || $current.next('[data-category="'+currentId+'"]');
+        $next = $next || $current.next('.cases-item');
 
         if (! $next.length) {
-            $next = $('.cases-item[data-category="'+currentId+'"]:last');
+            $next = $('.cases-item:first');
         }
 
         hideWork($current);

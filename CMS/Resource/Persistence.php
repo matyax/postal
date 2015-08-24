@@ -311,8 +311,12 @@ class Persistence implements PersistenceInterface
                 throw new Exception('Error inserting image.');
             }
 
-            ImageLib::open(Input::file('file'))
+            if ($image->extension == 'gif') {
+                copy(Input::file('file'), $image->path);
+            } else {
+                ImageLib::open(Input::file('file'))
                     ->save($image->path);
+            }
 
             ImageLib::open($image->path)
                     ->resize(100, 100)
