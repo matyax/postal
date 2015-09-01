@@ -10,7 +10,14 @@
         @media screen and (max-width: 550px) and (min-width: 450px) {
                 height: 840px;
         }
-          
+        
+        @media screen and (max-width: @sm)  {
+             background-image: none;
+        }
+        @media screen and (max-width: 400px)  {
+            height: 600px;
+        }
+        
         
         .process-block-list {
             position: relative;
@@ -166,6 +173,23 @@
     }
     #agency-team {
         padding: (@paddingBase*2) 0;
+        
+        
+        #desktop-team {
+            @media screen and (max-width: @md)  {
+
+                  display: none;
+
+            }
+        }
+        #mobile-team {
+             @media screen and (min-width: @md)  {
+
+                  display: none;
+
+            }
+        }
+        
         .team-member {
             margin-bottom: (@paddingBase*2);
             &:last-child {

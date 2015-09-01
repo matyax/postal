@@ -144,12 +144,20 @@
     
     #services-clients {
         padding: (@paddingBase*4) 0;
+         
         h2 {
             text-align: center;
             font-size: @h2;
             color: @blue;
             padding: 0 0 (@paddingBase*4);
             margin: 0;
+        }
+        
+         @media screen and (max-width: @sm) {
+             padding: (@paddingBase);
+             h2 {
+                 padding-bottom: @paddingBase;
+             }
         }
         
         #client-list {

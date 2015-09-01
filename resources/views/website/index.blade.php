@@ -117,7 +117,7 @@
                 </div>
 
                 <div id="agency-team" class="clearfix">
-                    <div class="container">
+                    <div class="container" id="desktop-team">
 
                             <div class="team-member col3">
                                  <div class="team-member-avatar castellino">
@@ -234,6 +234,130 @@
                                        </div>
                                   </div>
                             </div>
+                    </div>
+                    <div class="container" id="mobile-team">
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar castellino">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Eduardo Castellino
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Director
+                                       </div>
+                                  </div>
+                            </div>
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar perlino">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ana Perlino
+                                       </div>
+                                       <div class="team-member-title">
+                                           Directora creativa
+                                       </div>
+                                  </div>
+                            </div>
+                            
+                              <div class="team-member col3">
+                                 <div class="team-member-avatar maldonado">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Soledad Maldonado
+                                       </div>
+                                       <div class="team-member-title">
+                                           Coordinadora de cuentas
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar sanchez">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ana Clara Sánchez
+                                       </div>
+                                       <div class="team-member-title">
+                                           Branding
+                                       </div>
+                                  </div>
+                            </div>
+                           
+
+                          
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar segovia">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Alejandra Segovia
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Diseño Gráfico
+                                       </div>
+                                  </div>
+                            </div>
+                              <div class="team-member col3">
+                                 <div class="team-member-avatar gonzalez">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ezequiel González
+
+
+                                       </div>
+                                       <div class="team-member-title">
+                                           Diseño Gráfico
+                                       </div>
+                                  </div>
+                            </div>
+                            
+                             <div class="team-member col3">
+                                 <div class="team-member-avatar mariani">
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Pablo Mariani
+                                       </div>
+                                       <div class="team-member-title">
+                                           Eventos
+                                       </div>
+                                  </div>
+                            </div>
+
+                            <div class="team-member col3">
+                                 <div class="team-member-avatar esteller" >
+
+                                 </div>
+                                  <div class="team-member-data">
+                                       <div class="team-member-name">
+                                           Ignacio Esteller
+                                       </div>
+                                       <div class="team-member-title">
+                                           Social Media
+                                       </div>
+                                  </div>
+                            </div>
+
+
+                          
+
+                          
                     </div>
                 </div>
             </section>

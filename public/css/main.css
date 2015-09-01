@@ -969,6 +969,16 @@ input[type="submit"].button {
     height: 840px;
   }
 }
+@media screen and (max-width: 760px) {
+  #agency #agency-process {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  #agency #agency-process {
+    height: 600px;
+  }
+}
 #agency #agency-process .process-block-list {
   position: relative;
 }
@@ -1138,6 +1148,16 @@ input[type="submit"].button {
 }
 #agency #agency-team {
   padding: 40px 0;
+}
+@media screen and (max-width: 990px) {
+  #agency #agency-team #desktop-team {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) {
+  #agency #agency-team #mobile-team {
+    display: none;
+  }
 }
 #agency #agency-team .team-member {
   margin-bottom: 40px;
@@ -1362,6 +1382,14 @@ input[type="submit"].button {
   padding: 0 0 80px;
   margin: 0;
 }
+@media screen and (max-width: 760px) {
+  #services #services-clients {
+    padding: 20px;
+  }
+  #services #services-clients h2 {
+    padding-bottom: 20px;
+  }
+}
 #services #services-clients #client-list {
   font-size: 0;
 }
@@ -1436,6 +1464,11 @@ input[type="submit"].button {
     margin-bottom: 120px;
   }
 }
+@media screen and (min-width: 990px) {
+  #contact .contact-block {
+    font-size: 14px;
+  }
+}
 #contact .contact-block .title {
   position: absolute;
   top: 20px;
@@ -1447,6 +1480,11 @@ input[type="submit"].button {
   background-size: 90% auto;
   background-repeat: no-repeat;
   z-index: 0;
+}
+@media screen and (max-width: 420px) {
+  #contact .contact-block .title {
+    background-size: 80% auto;
+  }
 }
 #contact .contact-block .social-links {
   position: absolute;
@@ -1504,6 +1542,17 @@ input[type="submit"].button {
 @media screen and (max-width: 760px) {
   #contact .contact-block .form {
     padding: 0;
+  }
+}
+@media screen and (min-width: 990px) {
+  #contact .contact-block .form {
+    padding: 40px 40px 60px;
+  }
+  #contact .contact-block .form .form-half-col {
+    font-size: 14px !important;
+  }
+  #contact .contact-block .form .form-full-col {
+    font-size: 14px !important;
   }
 }
 #contact .contact-block .form .form-half-col {
@@ -1569,6 +1618,11 @@ input[type="submit"].button {
 @media screen and (max-width: 760px) {
   #cases {
     min-height: 110% !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  #cases {
+    height: 600px;
   }
 }
 #cases #cases-description {
@@ -1779,6 +1833,15 @@ input[type="submit"].button {
 #cases #cases-arrows a.arrow-right {
   right: 40px;
   background-image: url(../img/cases/arrow-right.png);
+}
+@media screen and (max-width: 760px) {
+  #cases #cases-arrows a {
+    width: 45px;
+    height: 75px;
+    margin-top: -37px;
+    background-size: 45px 75px;
+    background-position: center center;
+  }
 }
 body,
 html {
