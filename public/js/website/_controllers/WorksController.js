@@ -86,6 +86,9 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         hideWork($('.cases-item'));
         showWork($('.cases-item[data-category="'+categoryId+'"]:first'));
+        
+        $(".cases-nav").removeClass("open");
+        $("#mobile-cases-menu-button").removeClass("open");
     };
 
     $scope.prev = function ($event) {
@@ -125,5 +128,15 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         $('html, body').animate({
             scrollTop: $('#cases').position().top
         }, 1000, 'swing');
+        
+       
+        
     };
+    
+    
+    $scope.toggleMobileMenu = function(){
+        $(".cases-nav").toggleClass("open");
+        $("#mobile-cases-menu-button").toggleClass("open");
+    }
+    
 });

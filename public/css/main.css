@@ -3364,6 +3364,11 @@ body.mobile-menu-open {
   bottom: 80px;
   width: 100%;
 }
+@media screen and (max-width: 760px) {
+  #cases #cases-description {
+    bottom: 40px;
+  }
+}
 #cases #cases-description .description-container {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
@@ -3377,7 +3382,12 @@ body.mobile-menu-open {
   width: 100%;
   z-index: 20;
 }
-#cases #cases-nav ul {
+@media screen and (max-width: 760px) {
+  #cases #cases-nav {
+    bottom: 0;
+  }
+}
+#cases #cases-nav ul.cases-nav {
   width: 100%;
   background-color: #009fe3;
   margin: 0;
@@ -3387,10 +3397,10 @@ body.mobile-menu-open {
   height: 40px;
   line-height: 40px;
 }
-#cases #cases-nav ul li {
+#cases #cases-nav ul.cases-nav li {
   display: inline-block;
 }
-#cases #cases-nav ul li a {
+#cases #cases-nav ul.cases-nav li a {
   color: #ffffff;
   text-decoration: none;
   display: inline-block;
@@ -3399,30 +3409,80 @@ body.mobile-menu-open {
   border-right: 1px dotted #ffffff;
   padding: 0 10px;
 }
-#cases #cases-nav ul li a:hover {
+#cases #cases-nav ul.cases-nav li a:hover {
   color: #0a4c6a;
 }
-#cases #cases-nav ul li:last-child a {
+@media screen and (max-width: 990px) {
+  #cases #cases-nav ul.cases-nav li a {
+    font-size: 14px;
+  }
+}
+#cases #cases-nav ul.cases-nav li:last-child a {
   border-right: none;
 }
-#cases #cases-nav ul li.active a {
+#cases #cases-nav ul.cases-nav li.active a {
   color: #0a4c6a;
 }
 @media screen and (max-width: 760px) {
-  #cases #cases-nav ul li.active a {
+  #cases #cases-nav ul.cases-nav li.active a {
     color: #ffffff;
     border-right: none;
   }
 }
 @media screen and (max-width: 760px) {
-  #cases #cases-nav ul li.active {
+  #cases #cases-nav ul.cases-nav li.active {
     display: block !important;
   }
 }
 @media screen and (max-width: 760px) {
-  #cases #cases-nav ul li {
+  #cases #cases-nav ul.cases-nav li {
     display: none;
   }
+}
+@media screen and (max-width: 760px) {
+  #cases #cases-nav ul.cases-nav.open {
+    height: auto;
+  }
+  #cases #cases-nav ul.cases-nav.open li {
+    display: block;
+  }
+  #cases #cases-nav ul.cases-nav.open li a {
+    border-right: none;
+    border-bottom: 1px dotted #ffffff;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+  }
+  #cases #cases-nav ul.cases-nav.open li.active {
+    opacity: .5;
+  }
+  #cases #cases-nav ul.cases-nav.open li:last-child a {
+    border: none;
+  }
+}
+#cases #cases-nav #mobile-cases-menu-button {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  #cases #cases-nav #mobile-cases-menu-button {
+    display: block;
+  }
+}
+#cases #cases-nav #mobile-cases-menu-button a {
+  color: #FFF;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+#cases #cases-nav #mobile-cases-menu-button.open {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  top: -5px;
 }
 #cases #cases-images {
   position: absolute;

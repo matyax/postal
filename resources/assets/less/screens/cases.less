@@ -25,6 +25,11 @@
         position: absolute;
         bottom: (@paddingBase*2 + 40);
         width: 100%;
+        
+        @media screen and (max-width: @sm) {
+             bottom: (@paddingBase*2);
+        }
+        
         .description-container {
             background-color: fade(@white, 80%);
             padding: @paddingBase;
@@ -36,9 +41,14 @@
     #cases-nav {
         position: absolute;
         bottom: (@paddingBase*2);
+        
+        @media screen and (max-width: @sm) {
+             bottom: 0;
+        }
+        
         width: 100%;
         z-index: 20;
-        ul {
+        ul.cases-nav {
             width: 100%;
             background-color: @blue;
             margin: 0;
@@ -47,6 +57,8 @@
             padding: 0;
             height: 40px;
             line-height: 40px;
+            
+            
             li {
 
                 display: inline-block;
@@ -60,6 +72,10 @@
                     padding: 0 (@paddingBase/2);
                     &:hover {
                         color: @blueDark;
+                    }
+                     @media screen and (max-width: @md) {
+                        font-size: 14px;
+
                     }
                 }
                 &:last-child {
@@ -84,8 +100,60 @@
 
                 @media screen and (max-width: @sm) {
                     display: none;
-
+                   
                 }
+            }
+            @media screen and (max-width: @sm) {
+                
+                &.open {
+                    height: auto;
+                    li  {
+                        display: block;
+                        a {
+                              border-right: none;
+                              border-bottom: 1px dotted @white;
+                            display: block;
+                            height: 30px;
+                            line-height: 30px;
+                           
+                        }
+                        &.active {
+                            opacity: .5;
+                        }
+                        &:last-child {
+                            a {
+                                border: none;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            
+        }
+        
+        #mobile-cases-menu-button {
+            position: absolute;
+            right: 30px;
+            top: 0px;
+            
+            display: none;
+            @media screen and (max-width: @sm) {
+                display: block;
+            }
+            
+            a {
+                color: #FFF;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                
+            }
+            &.open {
+                transform: rotateX(180deg);
+                top: -5px;
             }
         }
     }

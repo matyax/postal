@@ -626,7 +626,7 @@
                <div id="cases-nav">
                    <div class="container">
                        <nav class="col8 center">
-                           <ul>
+                           <ul class="cases-nav">
                               @foreach ($categories as $category)
                                 <li>
                                     <a href="#" data-id="{{ $category->id }}" ng-click="displayCategory($event, {{ $category->id }})">{{ $category->name }}</a>
@@ -634,9 +634,15 @@
                               @endforeach
 
                            </ul>
+                           <div id="mobile-cases-menu-button">
+                               <a href ng-click="toggleMobileMenu()"><i class="fa fa-caret-up"></i></a>
+                           </div>
                        </nav>
                    </div>
                </div>
+               
+               
+               
             </section>
         </div>
 
