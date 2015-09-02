@@ -42,12 +42,39 @@
                         </li>
                     </ul>
                     <div id="mobile-menu">
-                        <a href>Menú</a>
+                        <a href ng-click="toggleMobileMenu()">Menú</a>
                     </div>
                 </nav>
 
             </div>
         </header>
+        
+        <div id="mobile-menu-window" ng-controller="NavigationController" class="">
+            <div class="mobile-brand">
+               <a href="/">Postal Urbana Marketing Agency</a>
+            </div>
+            
+            <div class="close-menu">
+                <a href ng-click="toggleMobileMenu()"><i class="fa fa-times"></i></a>
+            </div>
+            
+            <nav>
+                <ul class="mobile-nav">
+                    <li class="mobile-nav-item">
+                        <a href="#agency" class="mobile-nav-link" ng-click="navigateTo($event)">Agencia</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#services" class="mobile-nav-link" ng-click="navigateTo($event)">Servicios</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#cases" class="mobile-nav-link" ng-click="navigateTo($event)">Casos</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="#contact" class="mobile-nav-link" ng-click="navigateTo($event)">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <div ng-controller="WorksController">
             <section id="home" class="screen">
