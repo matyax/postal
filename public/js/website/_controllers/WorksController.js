@@ -17,6 +17,8 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         });
     }
 
+    window.slide = slide;
+
     function slide() {
         if ($('.banner-item').length == 1) {
             clearInterval(interval);
@@ -36,6 +38,7 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
     }
 
     function showBanner($banner) {
+        $banner.show();
         $banner.css('left', '0');
 
         $banner.addClass('displayed');
@@ -46,7 +49,14 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
             return false;
         }
 
-        $banner.css('left', '100%');
+        $banner.css('left', '-100%');
+        setTimeout(function () {
+            $banner.hide();
+            $banner.css('left', '100%');
+            setTimeout(function () {
+                $banner.show();
+            }, 1100);
+        }, 1100);
 
         $banner.removeClass('displayed');
     }
@@ -86,7 +96,7 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         hideWork($('.cases-item'));
         showWork($('.cases-item[data-category="'+categoryId+'"]:first'));
-        
+
         $(".cases-nav").removeClass("open");
         $("#mobile-cases-menu-button").removeClass("open");
     };
@@ -128,15 +138,15 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         $('html, body').animate({
             scrollTop: $('#cases').position().top
         }, 1000, 'swing');
-        
-       
-        
+
+
+
     };
-    
-    
+
+
     $scope.toggleMobileMenu = function(){
         $(".cases-nav").toggleClass("open");
         $("#mobile-cases-menu-button").toggleClass("open");
     }
-    
+
 });
