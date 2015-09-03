@@ -48,16 +48,16 @@
 
             </div>
         </header>
-        
+
         <div id="mobile-menu-window" ng-controller="NavigationController" class="">
             <div class="mobile-brand">
                <a href="/">Postal Urbana Marketing Agency</a>
             </div>
-            
+
             <div class="close-menu">
                 <a href ng-click="toggleMobileMenu()"><i class="fa fa-times"></i></a>
             </div>
-            
+
             <nav>
                 <ul class="mobile-nav">
                     <li class="mobile-nav-item">
@@ -80,10 +80,12 @@
             <section id="home" class="screen">
                 <div class="wrapper">
                     <div id="home-banners">
+                        <?php $i = 0; ?>
                         @foreach ($homeWorks as $work)
                             @foreach ($work->uploadedImages as $image)
                                 @if ($image['type'] == 'home')
-                                    <div class="banner-item" style="background-image:url({{ $image['path'] }}); left: 100%">
+                                    <?php $i++; ?>
+                                    <div class="banner-item {{ $i == 1 ? 'displayed' : '' }}" style="background-image:url({{ $image['path'] }}); {{ $i == 1 ? 'left: 0' : 'left: 100%;' }}">
                                         <div class="banner-text">
                                             <h3>{{ $work->title }}</h3>
                                             <div class="link">
@@ -291,7 +293,7 @@
                                        </div>
                                   </div>
                             </div>
-                            
+
                               <div class="team-member col3">
                                  <div class="team-member-avatar maldonado">
 
@@ -319,9 +321,9 @@
                                        </div>
                                   </div>
                             </div>
-                           
 
-                          
+
+
 
                             <div class="team-member col3">
                                  <div class="team-member-avatar segovia">
@@ -352,7 +354,7 @@
                                        </div>
                                   </div>
                             </div>
-                            
+
                              <div class="team-member col3">
                                  <div class="team-member-avatar mariani">
 
@@ -382,9 +384,9 @@
                             </div>
 
 
-                          
 
-                          
+
+
                     </div>
                 </div>
             </section>
@@ -640,9 +642,9 @@
                        </nav>
                    </div>
                </div>
-               
-               
-               
+
+
+
             </section>
         </div>
 

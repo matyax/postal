@@ -11,7 +11,6 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
             $('#cases-nav a:first').trigger('click');
 
             if ($('.banner-item').length) {
-                slide();
                 interval = setInterval(slide, 5000);
             }
         });
