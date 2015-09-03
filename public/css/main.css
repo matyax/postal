@@ -3337,26 +3337,26 @@ body.mobile-menu-open {
   }
 }
 #cases {
-  height: 900px;
+  height: 600px;
   min-height: 600px;
   max-height: 100%;
   background-color: #bfbfbf;
 }
 @media screen and (max-width: 990px) and (min-width: 760px) {
   #cases {
-    height: 450px;
+    height: 500px;
     min-height: 400px;
     max-height: 100%;
   }
 }
 @media screen and (max-width: 760px) {
   #cases {
-    min-height: 110% !important;
+    height: 500px;
   }
 }
 @media screen and (max-width: 420px) {
   #cases {
-    height: 600px;
+    height: 500px;
   }
 }
 #cases #cases-description {
