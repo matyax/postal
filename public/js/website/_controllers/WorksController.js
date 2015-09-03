@@ -76,7 +76,14 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
     }
 
     function hideWork($works) {
-        $works.css('left', '100%');
+        $works.css('left', '-100%');
+        setTimeout(function () {
+            $works.hide();
+            $works.css('left', '100%');
+            setTimeout(function () {
+                $works.show();
+            }, 1100);
+        }, 1100);
 
         $works.removeClass('displayed');
 
@@ -93,7 +100,7 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
 
         currentCategoryId = categoryId;
 
-        hideWork($('.cases-item'));
+        hideWork($('.cases-item:not([data-category="'+categoryId+'"]:first)'));
         showWork($('.cases-item[data-category="'+categoryId+'"]:first'));
 
         $(".cases-nav").removeClass("open");
@@ -137,9 +144,6 @@ angular.module('postalApp').controller('WorksController', function ($scope) {
         $('html, body').animate({
             scrollTop: $('#cases').position().top
         }, 1000, 'swing');
-
-
-
     };
 
 
