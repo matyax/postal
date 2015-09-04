@@ -149,7 +149,7 @@
             text-align: center;
             font-size: @h2;
             color: @blue;
-            padding: 0 0 (@paddingBase*4);
+            padding: 0 0 (@paddingBase);
             margin: 0;
         }
         
@@ -162,6 +162,11 @@
         
         #client-list {
             font-size: 0;
+               
+            @media screen and (min-width: @md) {
+                    padding: 0 7.5%;
+            }
+            
             .client-item {
                 position: relative;
                 display: inline-block;

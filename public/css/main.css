@@ -2684,7 +2684,7 @@ body.mobile-menu-open {
   content: "\f23a";
 }
 #agency #agency-process {
-  height: 760px;
+  height: 710px;
   background-image: url(../img/agency-bgr.png);
   background-position: center top;
 }
@@ -2719,6 +2719,9 @@ body.mobile-menu-open {
 @media screen and (min-width: 1280px) {
   #agency #agency-process .process-block-list {
     margin-left: 8%;
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 @media screen and (max-width: 760px) and (min-width: 650px) {
@@ -2881,6 +2884,12 @@ body.mobile-menu-open {
 @media screen and (max-width: 990px) {
   #agency #agency-team #desktop-team {
     display: none;
+  }
+}
+@media screen and (min-width: 990px) {
+  #agency #agency-team #desktop-team {
+    position: relative;
+    left: 70px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -3108,7 +3117,7 @@ body.mobile-menu-open {
   text-align: center;
   font-size: 36px;
   color: #009fe3;
-  padding: 0 0 80px;
+  padding: 0 0 20px;
   margin: 0;
 }
 @media screen and (max-width: 760px) {
@@ -3121,6 +3130,11 @@ body.mobile-menu-open {
 }
 #services #services-clients #client-list {
   font-size: 0;
+}
+@media screen and (min-width: 990px) {
+  #services #services-clients #client-list {
+    padding: 0 7.5%;
+  }
 }
 #services #services-clients #client-list .client-item {
   position: relative;
