@@ -60,7 +60,7 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
         $banner.removeClass('displayed');
     }
 
-    function showWork($work) {
+    function showWork($work, reverse) {
         if ($work.data('category') != currentCategoryId) {
             currentCategoryId = $work.data('category');
 
@@ -68,22 +68,34 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
             $('#cases-nav a[data-id="' + currentCategoryId + '"]').parent().addClass('active');
         }
 
-        $work.css('left', '0');
+        $work.css('transition', 'none');
+        if (reverse) {
+            $work.css('left', '-100%');
+        } else {
+            $work.css('left', '100%');
+        }
 
-        $work.addClass('displayed');
+        setTimeout(function () {
 
-        $('.description-container[data-work-id="'+$work.data('id')+'"]').show();
+            requestAnimationFrame(function () {
+                $work.css('transition', 'left 1s ease-in-out');
+
+                $work.css('left', '0');
+
+                $work.addClass('displayed');
+
+                $('.description-container[data-work-id="'+$work.data('id')+'"]').show();
+            });
+
+        }, 1);
     }
 
-    function hideWork($works) {
-        $works.css('left', '-100%');
-        setTimeout(function () {
-            $works.hide();
+    function hideWork($works, reverse) {
+        if (reverse) {
             $works.css('left', '100%');
-            setTimeout(function () {
-                $works.show();
-            }, 1100);
-        }, 1100);
+        } else {
+            $works.css('left', '-100%');
+        }
 
         $works.removeClass('displayed');
 
@@ -100,7 +112,7 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
 
         currentCategoryId = categoryId;
 
-        hideWork($('.cases-item:not([data-category="'+categoryId+'"]:first)'));
+        hideWork($('.cases-item.displayed'));
         showWork($('.cases-item[data-category="'+categoryId+'"]:first'));
 
         $(".cases-nav").removeClass("open");
@@ -117,8 +129,8 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
             $next = $('.cases-item:last');
         }
 
-        hideWork($current);
-        showWork($next);
+        hideWork($current, true);
+        showWork($next, true);
     };
 
     $scope.next = function ($event, $next) {
