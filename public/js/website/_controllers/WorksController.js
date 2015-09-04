@@ -1,4 +1,4 @@
-angular.module('postalApp').controller('WorksController', function ($scope) {
+angular.module('postalApp').controller('WorksController', function ($scope, navigationService) {
 
     var currentCategoryId = null,
         interval          = null;
