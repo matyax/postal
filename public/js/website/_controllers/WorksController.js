@@ -136,6 +136,12 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
         showWork($next);
     };
 
+    $scope.navigateAndShow = function ($event, categoryId) {
+        $scope.displayCategory($event, categoryId);
+
+        navigationService.navigateTo($event);
+    };
+
     $scope.goToCase = function($event, categoryId, workId) {
         $scope.displayCategory($event, categoryId);
 
@@ -145,7 +151,6 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
             scrollTop: $('#cases').position().top
         }, 1000, 'swing');
     };
-
 
     $scope.toggleMobileMenu = function(){
         $(".cases-nav").toggleClass("open");

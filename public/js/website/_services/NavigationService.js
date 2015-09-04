@@ -3,7 +3,7 @@ angular.module('postalApp').factory('navigationService', ['$http', function navi
         navigateTo: navigateTo
     };
 
-    function navigateTo($event) {
+    function navigateTo($event, callback) {
         $event.preventDefault();
 
         $("#mobile-menu-window").removeClass("open");
@@ -18,12 +18,16 @@ angular.module('postalApp').factory('navigationService', ['$http', function navi
         }
 
         scrollTo(scrollTop);
+
+        if (callback) {
+            callback();
+        }
     }
 
     function scrollTo(top) {
         $('html, body').animate({
             scrollTop: top
-        }, 1000, 'swing');
+        }, 800, 'swing');
     }
 
 }]);

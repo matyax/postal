@@ -398,7 +398,7 @@
                                 <h3>Asesoramiento comercial</h3>
                                 <p>A partir del análisis del mercado de su negocio, confeccionamos e implementamos planes de comunicación que brinden soluciones integrales para la activación de los objetivos comerciales.</p>
                                  <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 1)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
@@ -413,7 +413,7 @@
                                 <h3>Identidad  e imagen</h3>
                                 <p>Desarrollamos marcas y personalidades desde cero, implementando la identidad definida en toda la organización.</p>
                                 <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 2)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
@@ -428,7 +428,7 @@
                                 <h3>Multimedia</h3>
                                 <p>Desarrollamos piezas combinando múltiples medios físicos o digitales. Creamos y editamos contenidos audiovisuales. Generamos interfaces web, sitemas/usuarios y piezas interactivas.</p>
                                   <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 3)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
@@ -443,7 +443,7 @@
                                 <h3>Medios</h3>
                                 <p>Seleccionamos los medios idóneos para su empresa y garantizamos - gracias a nuestra vasta experiencia en el rubro -  excelentes acuerdos comerciales, logrando un plan de medios óptimo en relación costo - contacto.</p>
                                   <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 4)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
@@ -458,7 +458,7 @@
                                 <h3>Eventos</h3>
                                 <p>Detectamos eventos de interés para su empresa e implementamos su participación en los mismos. De igual manera, desarrollamos eventos corporativos de acuerdo a cada necesidad específica.</p>
                                  <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 6)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
@@ -473,7 +473,7 @@
                                 <h3>Social Media</h3>
                                 <p>Generamos y gestionamos plataformas de comunicación en línea, utilizando soportes interactivos logrando un impacto directo e inmediato..</p>
                                  <div class="action">
-                                     <a href="#cases" class="big-button" ng-click="navigateTo($event)">Ver Casos</a>
+                                     <a href="#cases" class="big-button" ng-click="navigateAndShow($event, 5)">Ver Casos</a>
                                  </div>
                             </div>
                         </div>
