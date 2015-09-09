@@ -477,6 +477,8 @@ input[type="submit"].button {
   top: 0;
   width: 100%;
   z-index: 1000;
+  background-color: #009fe3;
+  height: 100px;
 }
 #navigation nav {
   background-color: #009fe3;
@@ -2684,7 +2686,7 @@ body.mobile-menu-open {
   content: "\f23a";
 }
 #agency #agency-process {
-  height: 710px;
+  height: 620px;
   background-image: url(../img/agency-bgr.png);
   background-position: center top;
 }
@@ -2719,9 +2721,9 @@ body.mobile-menu-open {
 @media screen and (min-width: 1280px) {
   #agency #agency-process .process-block-list {
     margin-left: 8%;
-    -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 @media screen and (max-width: 760px) and (min-width: 650px) {
