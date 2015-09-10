@@ -32,7 +32,6 @@
         <meta property="og:site_name" content="Postal Urbana"/>
         <meta property="og:url" content="http://www.postalurbana.com.ar" />
         <meta property="og:description" content="Postal Urbana - Diseño gráfico, web, marketing digital y redes sociales. Mendoza, Argentina" />
-        <meta property="og:locale" content="es_AR" />
         <meta property="og:image"content="http://www.postalurbana.com.ar/fbbrand.png" />
 
     </head>

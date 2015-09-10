@@ -5,7 +5,7 @@ angular.module('postalApp').controller('NavigationController', function ($scope,
     }
 
     $scope.toggleMobileMenu = function(){
-       $("#mobile-menu-window").toggleClass("open");
+       $("#mobile-menu-window").toggleClass("open").toggle();
        $("body").toggleClass("mobile-menu-open");
     }
 });
