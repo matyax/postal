@@ -1,7 +1,12 @@
 @extends('website.layout')
 
 @section('content')
-        <header id="navigation" ng-controller="NavigationController">
+        <div style="width: 100%; height: 100%; position: relative;" id="preloader">
+            <div style="margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 20px; height: 20px;">
+                <span class="fa fa-spinner fa-pulse fa-2x"></span>
+            </div>
+        </div>
+        <header id="navigation" ng-controller="NavigationController" style="display: none">
             <div class="container">
                 <div id="brand">
                    <a href="/">Postal Urbana Marketing Agency</a>
@@ -49,7 +54,7 @@
             </div>
         </header>
 
-        <div id="mobile-menu-window" ng-controller="NavigationController" class="">
+        <div id="mobile-menu-window" ng-controller="NavigationController" style="display: none">
             <div class="mobile-brand">
                <a href="/">Postal Urbana Marketing Agency</a>
             </div>
@@ -76,7 +81,7 @@
             </nav>
         </div>
 
-        <div ng-controller="WorksController">
+        <div id="all-sections" ng-controller="WorksController" style="display: none">
             <section id="home" class="screen">
                 <div class="wrapper">
                     <div id="home-banners">
@@ -86,6 +91,7 @@
                                 @if ($image['type'] == 'home')
                                     <?php $i++; ?>
                                     <div class="banner-item {{ $i == 1 ? 'displayed' : '' }}" style="background-image:url({{ $image['path'] }}); {{ $i == 1 ? 'left: 0' : 'left: 100%;' }}">
+                                        <img src="{{ $image['path'] }}" style="display: none">
                                         <div class="banner-text">
                                             <h3>{{ $work->title }}</h3>
                                             <div class="link">
@@ -643,7 +649,7 @@
             </section>
         </div>
 
-        <section id="contact" class="screen" ng-controller="ContactController">
+        <section id="contact" class="screen" ng-controller="ContactController" style="display: none">
             <a href class="map-link"></a>
             <div class="wrapper">
 

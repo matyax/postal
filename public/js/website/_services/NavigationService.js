@@ -13,8 +13,11 @@ angular.module('postalApp').factory('navigationService', ['$http', function navi
             $target   = $(targetId),
             scrollTop = $target.position().top;
 
+        console.log(scrollTop);
+
         if ((targetId == '#services')
-            || (targetId == '#cases')) {
+            || (targetId == '#cases')
+                || (targetId == '#agency')) {
             scrollTop -= $('header').outerHeight();
         }
 

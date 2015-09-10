@@ -1,4 +1,4 @@
-angular.module('postalApp', ['ngResource', 'ui.router'])
+angular.module('postalApp', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider, $interpolateProvider) {
         $interpolateProvider.startSymbol('[[');
         $interpolateProvider.endSymbol(']]');
@@ -9,3 +9,10 @@ angular.module('postalApp', ['ngResource', 'ui.router'])
                               window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
   window.requestAnimationFrame = requestAnimationFrame;
 })();
+
+$(function () {
+    $('#home-banners img').imgpreload(function() {
+        $('#preloader').remove();
+        $('header, #mobile-menu-window, #all-sections, #contact').fadeIn('fast');
+    });
+});

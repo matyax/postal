@@ -1,4 +1,4 @@
-var adminApp = angular.module('adminApp', ['ngResource', 'ui.router', 'ngFileUpload', 'ui.bootstrap']);
+var adminApp = angular.module('adminApp', ['ui.router', 'ngFileUpload', 'ui.bootstrap']);
 
 adminApp.config(function($stateProvider, $urlRouterProvider, $interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
