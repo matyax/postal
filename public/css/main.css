@@ -2751,6 +2751,16 @@ body.mobile-menu-open {
     background-image: none;
   }
 }
+@media screen and (min-width: 760px) and (max-width: 990px) {
+  #agency #agency-process {
+    height: 780px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1280px) and (orientation: landscape) {
+  #agency #agency-process {
+    height: 780px;
+  }
+}
 @media screen and (max-width: 400px) {
   #agency #agency-process {
     height: 600px;
