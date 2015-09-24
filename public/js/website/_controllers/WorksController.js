@@ -13,6 +13,8 @@ angular.module('postalApp').controller('WorksController', function ($scope, navi
             if ($('.banner-item').length) {
                 interval = setInterval(slide, 5000);
             }
+
+            $('#home').height($(window).height());
         });
     }
 
