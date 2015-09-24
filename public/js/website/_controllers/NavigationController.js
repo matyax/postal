@@ -5,7 +5,13 @@ angular.module('postalApp').controller('NavigationController', function ($scope,
     }
 
     $scope.toggleMobileMenu = function(){
-       $("#mobile-menu-window").toggleClass("open").toggle();
-       $("body").toggleClass("mobile-menu-open");
+       if (! $("#mobile-menu-window").hasClass('open')) {
+            $("body").removeClass("mobile-menu-open");
+            $("#mobile-menu-window").addClass('open').show();
+       } else {
+            $("body").addClass("mobile-menu-open");
+            $("#mobile-menu-window").removeClass('open').hide();
+       }
+
     }
 });

@@ -13,7 +13,7 @@ angular.module('postalApp', ['ui.router'])
 $(function () {
     $('#home-banners img').imgpreload(function() {
         $('#preloader').remove();
-        $('header, #mobile-menu-window, #all-sections, #contact').fadeIn('fast');
+        $('header, #all-sections, #contact').fadeIn('fast');
     });
 
     $('<img>').attr('src', '/img/loading.gif');

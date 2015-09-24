@@ -6,14 +6,12 @@ angular.module('postalApp').factory('navigationService', ['$http', function navi
     function navigateTo($event, callback) {
         $event.preventDefault();
 
-        $("#mobile-menu-window").removeClass("open");
+        $("#mobile-menu-window").removeClass("open").toggle();
         $("body").removeClass("mobile-menu-open");
 
         var targetId  = $($event.currentTarget).attr('href'),
             $target   = $(targetId),
             scrollTop = $target.position().top;
-
-        console.log(scrollTop);
 
         if ((targetId == '#services')
             || (targetId == '#cases')
