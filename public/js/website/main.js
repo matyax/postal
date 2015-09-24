@@ -17,4 +17,6 @@ $(function () {
     });
 
     $('<img>').attr('src', '/img/loading.gif');
+
+    document.addEventListener("touchstart", function(){}, true);
 });
